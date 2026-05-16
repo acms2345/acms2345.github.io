@@ -1,0 +1,18 @@
+/* Cards de projetos */
+.projeto {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.projeto h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    color: #667eea;
+    font-weight: bold;
+}
