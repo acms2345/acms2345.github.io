@@ -119,4 +119,5 @@ footer a {
     width: 20px;
     height: 20px;
     object-fit: contain;
+    filter: invert(1) brightness(1.2);
 }
