@@ -34,11 +34,13 @@ header p {
 }
 
 nav {
-    background: rgb(70, 65, 86);
-    color: linear-gradient(--gradiente);
+    background:#2c3e50;
+    color: white;
     text-decoration: none;
     word-spacing: 20px;
-    
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
 }
 
 /* Cards de projetos */
