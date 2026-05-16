@@ -1,3 +1,7 @@
+:root {
+    --gradiente: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 /* Reset e estilos gerais */
 * {
     margin: 0;
@@ -13,7 +17,7 @@ body {
 
 /* Header - Apresentação */
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--gradiente);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -29,10 +33,12 @@ header p {
     margin-bottom: 20px;
 }
 
-nav a {
+nav {
     background: rgb(70, 65, 86);
-    color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: linear-gradient(--gradiente);
     text-decoration: none;
+    word-spacing: 20px;
+    
 }
 
 /* Cards de projetos */
