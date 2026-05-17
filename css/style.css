@@ -48,6 +48,28 @@ nav a {
 }
 
 /* Cards de projetos */
+
+
+#projetos {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projetos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+/* Container com Grid */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
 .projeto {
     background: #f4f4f4;
     padding: 20px;
@@ -64,6 +86,32 @@ nav a {
 .projeto a {
     color: #667eea;
     font-weight: bold;
+}
+
+/* Botão do Projeto */
+.btn-projeto {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-projeto:hover {
+    background: #764ba2;
+}
+
+/* Responsivo - Mobile */
+@media (max-width: 768px) {
+    .projetos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #projetos h2 {
+        font-size: 28px;
+    }
 }
 
 /* Footer */
