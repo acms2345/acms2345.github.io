@@ -33,6 +33,19 @@ header p {
     margin-bottom: 20px;
 }
 
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
 /* Navegação */
 nav {
     background:#2c3e50;
@@ -47,21 +60,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Cards de projetos */
 
-
-#projetos {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#projetos h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #667eea;
-    padding-bottom: 10px;
-}
 
 /* Container com Grid */
 .projetos-container {
@@ -86,10 +85,20 @@ nav a {
 .projeto a {
     color: #667eea;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.projeto a:hover:not(.btn-projeto){
+    color: #764ba2;
+}
+
+.projeto ol {
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 /* Botão do Projeto */
-.btn-projeto {
+.projeto .btn-projeto {
     display: inline-block;
     background: #667eea;
     color: white;
@@ -99,7 +108,7 @@ nav a {
     transition: background 0.3s;
 }
 
-.btn-projeto:hover {
+.projeto .btn-projeto:hover {
     background: #764ba2;
 }
 
@@ -112,6 +121,15 @@ nav a {
     #projetos h2 {
         font-size: 28px;
     }
+}
+
+#contato a{
+    color: #667eea;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+#contato a:hover{
+    color: #764ba2;
 }
 
 /* Footer */
