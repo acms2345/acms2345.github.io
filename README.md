@@ -29,4 +29,5 @@ Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](github.com/a
 - HTML;
 - CSS;
 - JavaScript;
-- Para fontes e imagens: Google Fonts.
+- Para fontes e imagens: Google Fonts;
+- Formspree e reCAPTCHA para o formulário de contato.
