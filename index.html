@@ -76,15 +76,17 @@
         <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
             <label>
                 Seu email:
-                <input type="email" name="email">
+                <input type="email" name="email" required>
             </label>
-            <label>
-                Sua mensagem:
-                <textarea name="message"></textarea>
-            </label>
+            <div class="input_group">
+                <label>
+                    Sua mensagem:
+                    <textarea name="message" required></textarea>
+                </label>
+            </div>
             <!-- your other form fields go here -->
             <button class="g-recaptcha" data-sitekey="6Lez9_UsAAAAAK8f96eIN6D_wVTamWBDerHUwNS4"
-            data-callback='onSubmit' data-action='submit' type="submit">Send</button>
+            data-callback='onSubmit' data-action='submit' type="submit">Enviar</button>
         </form>
 
     </section>
