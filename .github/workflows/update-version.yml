@@ -1,45 +1,49 @@
-name: Modify Build Version
+name: Update Build Version
 
 on:
   push:
     branches:
-      - main-clean
+      - main
 
 jobs:
   update-version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get commit info
-        id: commit-info
+      - name: Get commit info and update
         run: |
-          echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          # This code gets the commit hash.
-          echo "COMMIT_URL=https://github.com${{ github.repository }}/commit/$(git rev-parse HEAD)" >> $GITHUB_OUTPUT 
-
-          echo "BUILD_NUMBER=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
-          # This code gets the number of commits.
-
-      - name: Update site with new info
-        run: |
-          sed -i 's/BUILD_VERSION/Build '"${{ steps.commit-info.outputs.BUILD_NUMBER }}"'/g' index.html
-          sed -i 's/COMMIT_HASH/'"${{ steps.commit-info.outputs.SHORT_SHA }}"'/g' index.html
-          sed -i 's|COMMIT_URL|'"${{ steps.commit-info.outputs.COMMIT_URL }}"'|g' index.html
-
-      - name: Commit and push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          BUILD_NUMBER=$(git rev-list --count HEAD)
+          FULL_SHA=$(git rev-parse HEAD)
+          COMMIT_URL="https://github.com/${{ github.repository }}/commit/${FULL_SHA}"
           
-          if git diff --quiet index.html; then
+          echo "Atualizando com:"
+          echo "Build: ${BUILD_NUMBER}"
+          echo "Commit: ${SHORT_SHA}"
+          echo "URL: ${COMMIT_URL}"
+          
+          sed -i "s|BUILD_VERSION|Build ${BUILD_NUMBER}|g" index.html
+          sed -i "s|COMMIT_HASH|${SHORT_SHA}|g" index.html
+          sed -i "s|COMMIT_URL|${COMMIT_URL}|g" index.html
+          
+          echo "✓ Atualização concluída"
+
+      - name: Commit and push changes
+        run: |
+          if [ -n "$(git status -s index.html)" ]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "ci: update build version [skip ci]"
+            git push
+          else
             echo "Nenhuma mudança para fazer commit"
-            exit 0
           fi
-          
-          git add index.html
-          git commit -m "chore: update build version [skip ci]"
-          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
