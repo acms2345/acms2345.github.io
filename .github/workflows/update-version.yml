@@ -3,7 +3,7 @@ name: Update Build Version
 on:
   push:
     branches:
-      - main
+      - main-clean
 
 jobs:
   update-version:
