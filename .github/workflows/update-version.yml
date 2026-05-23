@@ -34,6 +34,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet index.html; then
+            echo "Nenhuma mudança para fazer commit"
+            exit 0
+          fi
+          
           git add index.html
-          git commit -m "chore: update build version" || exit 0
-          git push
+          git commit -m "chore: update build version [skip ci]"
+          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
