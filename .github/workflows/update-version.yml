@@ -10,40 +10,36 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
+      
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
+          ref: main-clean
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get commit info and update
+      - name: Calculate version info
+        id: version
         run: |
           SHORT_SHA=$(git rev-parse --short HEAD)
           BUILD_NUMBER=$(git rev-list --count HEAD)
           FULL_SHA=$(git rev-parse HEAD)
           COMMIT_URL="https://github.com/${{ github.repository }}/commit/${FULL_SHA}"
           
-          echo "Atualizando com:"
-          echo "Build: ${BUILD_NUMBER}"
-          echo "Commit: ${SHORT_SHA}"
-          echo "URL: ${COMMIT_URL}"
-          
-          sed -i "s|BUILD_VERSION|Build ${BUILD_NUMBER}|g" index.html
-          sed -i "s|COMMIT_HASH|${SHORT_SHA}|g" index.html
-          sed -i "s|COMMIT_URL|${COMMIT_URL}|g" index.html
-          
-          echo "✓ Atualização concluída"
+          echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_OUTPUT
+          echo "BUILD_NUMBER=${BUILD_NUMBER}" >> $GITHUB_OUTPUT
+          echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_OUTPUT
 
-      - name: Commit and push changes
+      - name: Update index.html
         run: |
-          if [ -n "$(git status -s index.html)" ]; then
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add index.html
-            git commit -m "ci: update build version [skip ci]"
-            git push
-          else
-            echo "Nenhuma mudança para fazer commit"
-          fi
+          sed -i "s|BUILD_VERSION|Build ${{ steps.version.outputs.BUILD_NUMBER }}|g" index.html
+          sed -i "s|COMMIT_HASH|${{ steps.version.outputs.SHORT_SHA }}|g" index.html
+          sed -i "s|COMMIT_URL|${{ steps.version.outputs.COMMIT_URL }}|g" index.html
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update build version [skip ci]"
+          file_pattern: index.html
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
