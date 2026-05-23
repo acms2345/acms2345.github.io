@@ -60,6 +60,14 @@ nav a {
     font-weight: bold;
 }
 
+.sobre-conteudo {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 30px;
+    font-size: 16px;
+    border-left: 5px solid #667eea;
+}
+
 
 
 /* Container com Grid */
@@ -92,7 +100,7 @@ nav a {
     color: #764ba2;
 }
 
-.projeto ol {
+ol, ul {
     margin-left: 20px;
     padding-left: 20px;
 }
