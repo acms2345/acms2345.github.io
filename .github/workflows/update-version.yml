@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -28,7 +28,7 @@ jobs:
         run: |
           sed -i 's/BUILD_VERSION/Build '"${{ steps.commit-info.outputs.BUILD_NUMBER }}"'/g' index.html
           sed -i 's/COMMIT_HASH/'"${{ steps.commit-info.outputs.SHORT_SHA }}"'/g' index.html
-          sed -i 's|COMMIT_URL|'"${{ steps.commit-info.outputs.COMMIT_URL }}"'/g' index.html
+          sed -i 's|COMMIT_URL|'"${{ steps.commit-info.outputs.COMMIT_URL }}"'|g' index.html
 
       - name: Commit and push
         run: |
