@@ -78,14 +78,16 @@ nav a {
 }
 
 .projeto {
-    display: flex;
+    display: grid;
     gap: 30px;
-    align-items: flex-start;
+    align-items: stretch;
     background: #f4f4f4;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     border-left: 4px solid #667eea;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .projeto-screenshot {
@@ -95,6 +97,10 @@ nav a {
 .projeto-screenshot img {
     border-radius: 8px;
     max-width: 500px;
+}
+
+.projeto-informacoes {
+    flex: 1;
 }
 
 .projeto h3 {
@@ -230,6 +236,20 @@ footer a {
     
     section {
         padding: 40px 15px;
+    }
+
+    .projeto {
+        flex-direction: column;
+        gap: 15 px;
+    }
+
+    .projeto-informacoes {
+        flex: 1;
+    }
+
+    .projeto-screenshot img{
+        width: 100%;
+        max-width: 300px;
     }
 }
 
