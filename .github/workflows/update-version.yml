@@ -1,0 +1,39 @@
+name: Modify Build Version
+
+on:
+  push:
+    branches:
+      - main-clean
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get commit info
+        id: commit-info
+        run: |
+          echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          # This code gets the commit hash.
+          echo "COMMIT_URL=https://github.com${{ github.repository }}/commit/$(git rev-parse HEAD)" >> $GITHUB_OUTPUT 
+
+          echo "BUILD_NUMBER=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
+          # This code gets the number of commits.
+
+      - name: Update site with new info
+        run: |
+        sed -i 's/BUILD_VERSION/Build '"${{ steps.commit-info.outputs.BUILD_NUMBER }}"'/g' index.html
+        sed -i 's/COMMIT_HASH/'"${{ steps.commit-info.outputs.SHORT_SHA }}"'/g' index.html
+        sed -i 's|COMMIT_URL|'"${{ steps.commit-info.outputs.COMMIT_URL }}"'/g' index.html
+
+      -name: Commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "chore: update build version" || exit 0
+          git push
