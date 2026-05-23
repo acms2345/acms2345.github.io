@@ -78,11 +78,23 @@ nav a {
 }
 
 .projeto {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
     background: #f4f4f4;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     border-left: 4px solid #667eea;
+}
+
+.projeto-screenshot {
+    flex: 0 0 40%;
+}
+
+.projeto-screenshot img {
+    border-radius: 8px;
+    max-width: 500px;
 }
 
 .projeto h3 {
@@ -129,6 +141,18 @@ ol, ul {
     #projetos h2 {
         font-size: 28px;
     }
+}
+
+.icon-godot {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.icon-vscode {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
 }
 
 #contato a{
