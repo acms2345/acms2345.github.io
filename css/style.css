@@ -78,7 +78,7 @@ nav a {
 }
 
 .projeto {
-    display: grid;
+    display: flex;
     gap: 30px;
     align-items: stretch;
     background: #f4f4f4;
@@ -96,7 +96,7 @@ nav a {
 
 .projeto-screenshot img {
     border-radius: 8px;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 .projeto-informacoes {
@@ -240,7 +240,7 @@ footer a {
 
     .projeto {
         flex-direction: column;
-        gap: 15 px;
+        gap: 15px;
     }
 
     .projeto-informacoes {
@@ -250,6 +250,12 @@ footer a {
     .projeto-screenshot img{
         width: 100%;
         max-width: 300px;
+    }
+
+    .projeto-screenshot{
+        min-width: unset;
+        flex: 0 0 auto;
+        width: 100%;
     }
 }
 
