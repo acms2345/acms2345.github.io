@@ -30,11 +30,15 @@ jobs:
           echo "BUILD_NUMBER=${BUILD_NUMBER}" >> $GITHUB_OUTPUT
           echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_OUTPUT
 
-      - name: Update index.html
+      - name: Update version.json
         run: |
-          sed -i "s|BUILD_VERSION|Build ${{ steps.version.outputs.BUILD_NUMBER }}|g" index.html
-          sed -i "s|COMMIT_HASH|${{ steps.version.outputs.SHORT_SHA }}|g" index.html
-          sed -i "s|COMMIT_URL|${{ steps.version.outputs.COMMIT_URL }}|g" index.html
+          cat > version.json <<EOF
+          {
+            "buildNumber" : "${{ steps.version.outputs.BUILD_NUMBER }}",
+            "shortSha": "${{ steps.version.outputs.SHORT_SHA }}",
+            "commitUrl": "${{ steps.version.outputs.COMMIT_URL }}"
+          }
+          EOF
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
