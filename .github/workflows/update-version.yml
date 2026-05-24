@@ -36,7 +36,7 @@ jobs:
           {
             "buildNumber" : "${{ steps.version.outputs.BUILD_NUMBER }}",
             "shortSha": "${{ steps.version.outputs.SHORT_SHA }}",
-            "commitUrl": "${{ steps.version.outputs.COMMIT_URL }}"
+            "commitURL": "${{ steps.version.outputs.COMMIT_URL }}"
           }
           EOF
 
@@ -44,6 +44,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update build version [skip ci]"
-          file_pattern: index.html
+          file_pattern: version.json
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
