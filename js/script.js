@@ -26,6 +26,7 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
 /*Essa função coleta os dados do JSON, e os adiciona no HTML */
 async function loadVersionInfo() {
     const dadosJson = await fetch('../version.json', {cache: 'no-store'});
