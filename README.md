@@ -21,8 +21,8 @@
 
 Este é um jogo de xadrez para dois jogadores (de forma local, ou seja, sem sistema de multiplayer online).
 
-Link do repositório: [github.com/acms2345/Xadrez-em-C](github.com/acms2345/Xadrez-em-C).
-Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](github.com/acms2345/Xadrez-em-C/releases).
+Link do repositório: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
+Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases).
 
 ## Ferramentas usadas
 

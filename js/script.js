@@ -1,6 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Site carregado!\n');
+    
+    //Parte para o menu
+    
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    
+    //Ao clicar no menu
+    menuBtn.addEventListener('click', function(){
+      menuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    document.querySelectorAll('.navMenu a').forEach(link => {
+      link.addEventListener('click', function(){
+        menuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    })
+    
+    //Fechar ao clicar fora
+    document.addEventListener('click', function(e) {
+    if (!e.target.closest('nav')) {
+        menuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+    
 });
+});
+
+
 
 document.querySelector('.botao_repositorio').addEventListener('click', function() {
     window.location.href = 'https://github.com/acms2345/acms2345.github.io';
@@ -44,3 +73,4 @@ async function loadVersionInfo() {
 }
 
 document.addEventListener('DOMContentLoaded', loadVersionInfo);
+
