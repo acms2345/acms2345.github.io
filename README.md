@@ -17,17 +17,29 @@
 
 ## Projetos exibidos
 
-### Xadrez em C 
+### Xadrez em C ♙
 
 Este é um jogo de xadrez para dois jogadores (de forma local, ou seja, sem sistema de multiplayer online).
 
 Link do repositório: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
 Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases).
 
-## Ferramentas usadas
+## Recursos do portfólio 📋
+
+- Design responsivo;
+- Menu hamburger para mobile;
+- Formulário para contato.
+
+##  Ferramentas usadas ⚙️
 
 - HTML;
 - CSS;
 - JavaScript;
 - Para fontes e imagens: Google Fonts;
 - Formspree e reCAPTCHA para o formulário de contato.
+
+## Contato 👤
+
+- Perfil do Github: [acms2345](https://github.com/acms2345)
+- Contato: [acms2345.github.io/#contato](https://acms2345.github.io/#contato)
+
