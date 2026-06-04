@@ -26,7 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.remove('active');
     }
     
-});
+    });
+
+    loadLanguage();
+
 });
 
 
@@ -74,3 +77,57 @@ async function loadVersionInfo() {
 
 document.addEventListener('DOMContentLoaded', loadVersionInfo);
 
+async function setLanguage(linguagem) {
+    try {
+        const resposta = await fetch(`i18n/${linguagem}.json`, {cache: 'no-store'});
+        //Coleta os dados do JSON
+        if (!resposta.ok) return;
+        //Se não conseguir coletar os dados, encerra a função.
+        const dicio = await resposta.json();
+
+        // Aplicar em elementos com data-i18n (texto)
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.dataset.i18n;
+            if (dicio[key]) {
+                el.textContent = dicio[key];
+            }
+        });
+
+        // Aplicar em elementos com data-i18n-attr (atributos)
+        document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+            const [attrName, key] = el.dataset.i18nAttr.split(':');
+            if (dicio[key]) {
+                el.setAttribute(attrName, dicio[key]);
+            }
+        });
+
+        document.querySelectorAll('button[data-lang]').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelector(`button[data-lang="${linguagem}"]`).classList.add('active');
+
+        
+
+        document.documentElement.lang = linguagem;
+
+    } catch (error){
+        console.error('Erro ao carregar idioma: ', error);
+    }
+}
+
+async function loadLanguage() {
+    
+    const browserLang = (navigator.language || '').toLowerCase();
+    const defaultLang = browserLang.startsWith('pt') ? 'pt' 
+    : browserLang.startsWith('en') ? 'en' : 'en';
+    setLanguage(defaultLang);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-lang]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+            setLanguage(lang);
+        });
+    });
+});

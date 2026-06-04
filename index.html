@@ -33,26 +33,28 @@
           <img src="/assets/close.svg" class="menuClose" style="display:none;">
         </button>
         <div class="navMenu" id="navMenu">
-          <a href="#sobre">Sobre</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#contato">Contato</a>
+          <a href="#sobre" data-i18n="nav.about">Sobre</a>
+          <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+          <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+          <a href="#contato" data-i18n="nav.contact">Contato</a>
         </div>
+        <button data-lang="pt" title="Português">🇧🇷</button>
+        <button data-lang="en" title="English">🇺🇸</button>
         
     </nav>
     <header>
         <h1>Antonio Carlos</h1>
-        <p>Desenvolvedor de jogos | Programador | Estudante</p>
+        <p data-i18n="header.subtitle">Desenvolvedor de jogos | Programador | Estudante</p>
     </header>
     <section id="sobre">
-        <h2>Sobre mim</h2>
+        <h2 data-i18n="about.title">Sobre mim</h2>
         <div class="sobre-conteudo">
-            <p>
+            <p data-i18n="about.description1">
                 Olá! Sou um adolescente de 16 anos, que desde 3-4 anos fazia desenvolvimento 
                 (principalmente de jogos, em plataformas como a Godot Engine) por entretenimento 
                 e como passatempo.
             </p>
-            <p>
+            <p data-i18n="about.description2">
                 Atualmente, estou cursando o Técnico em Informática, pois busco me qualificar naquilo
                 que gosto e me identifico. Enquanto isso, estou buscando me aperfeiçoar por meio de 
                 alguns projetos particulares, 
@@ -64,31 +66,33 @@
         
     </section>
     <section id="projetos">
-        <h2>Projetos</h2>
+        <h2 data-i18n="projects.title">Projetos</h2>
         <div class="projetos-container">
             <!-- Projeto 1 -->
             <div class="projeto">
                 <div class="projeto-screenshot">
-                    <img src="assets/xadrez-em-c_screenshot.png" alt="Screenshot do Xadrez em C">
+                    <img src="assets/xadrez-em-c_screenshot.png" alt="Screenshot do Xadrez em C" data-i18n-attr="alt:projects.chess-in-c.alt">
                 </div>
                 <div class="projeto-informacoes">
-                    <h3>Xadrez em C ♙</h3>
-                    <p>Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, 
+                    <h3 data-i18n="projects.chess-in-c.title">Xadrez em C ♙</h3>
+                    <p data-i18n="projects.chess-in-c.description1">Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, 
                         me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), 
                         no formato de terminal.</p>
-                    <p>Esse jogo também foi publicado na <a href="https://flavortown.hackclub.com/">Flavortown</a>,
-                    uma plataforma de programação e desafio global voltada a adolescentes.</p>
-                    <p>O jogo possui como recursos:</p>
+                    <p><span data-i18n="projects.chess-in-c.description2.pre">Esse jogo também foi publicado na </span> 
+                        <a href="https://flavortown.hackclub.com/">Flavortown</a>
+                        <span data-i18n="projects.chess-in-c.description2.post">, uma plataforma de programação e desafio global voltada a adolescentes.</span>
+                    </p>
+                    <p data-i18n="projects.chess-in-c.description3">O jogo possui como recursos:</p>
                     <ol>
-                        <li>Partida de xadrez local para duas pessoas;</li>
-                        <li>Sistema de tradução, tendo as línguas português e inglês;</li>
-                        <li>Sistema de salvamento de partidas;</li>
-                        <li>Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;</li>
-                        <li>Sistema de verificação de jogadas fiel às regras oficiais do xadrez, incluindo
+                        <li data-i18n="projects.chess-in-c.feature1">Partida de xadrez local para duas pessoas;</li>
+                        <li data-i18n="projects.chess-in-c.feature2">Sistema de tradução, tendo as línguas português e inglês;</li>
+                        <li data-i18n="projects.chess-in-c.feature3">Sistema de salvamento e carregamento de partidas;</li>
+                        <li data-i18n="projects.chess-in-c.feature4">Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;</li>
+                        <li data-i18n="projects.chess-in-c.feature5">Sistema de verificação de jogadas fiel às regras oficiais do xadrez, incluindo
                             movmentos especiais como roque, afogamento, etc.;</li>
-                        <li>E sistema de replay das partidas.</li>
+                        <li data-i18n="projects.chess-in-c.feature6">E sistema de replay das partidas.</li>
                     </ol>
-                    <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-projeto">Ver no GitHub</a>
+                    <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-projeto" data-i18n="projects.viewOnGitHub">Ver no GitHub</a>
                 </div>
                 
             </div>
@@ -96,50 +100,51 @@
     </section>
     
     <section id="habilidades">
-      <h2>Habilidades</h2>
+      <h2 data-i18n="skills.title">Habilidades</h2>
 
-      <h3>Linguagens</h3>
+      <h3 data-i18n="skills.languages">Linguagens</h3>
       <ul>
-        <li><i class="fab fa-c"></i> C (Intermediário)</li>
-        <li><i class="fab fa-python"></i> Python (Básico)</li>
-        <li><i class="fab fa-html5"></i> HTML (Básico)</li>
-        <li><i class="fab fa-css3"></i> CSS (Básico)</li>
-        <li><i class="fab fa-js-square"></i> JavaScript (Básico)</li>
+        <li><i class="fab fa-c"></i><span data-i18n="skills.languages.c"> C (Intermediário)</span></li>
+        <li><i class="fab fa-python"></i><span data-i18n="skills.languages.python"></span> Python (Básico)</span></li>
+        <li><i class="fab fa-html5"></i><span data-i18n="skills.languages.html"> HTML (Básico)</span></li>
+        <li><img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-i18n-attr="alt:skills.languages.gdscript.alt"> <span data-i18n="skills.languages.gdscript"> GDScript (Básico)</span></li>
+        <li><i class="fab fa-css3"></i><span data-i18n="skills.languages.css"> CSS (Básico)</span></li>
+        <li><i class="fab fa-js-square"></i><span data-i18n="skills.languages.javascript"> JavaScript (Básico)</span></li>
       </ul>
 
-      <h3>Ferramentas</h3>
+      <h3 data-i18n="skills.tools">Ferramentas</h3>
       <ul>
         <li><i class="fab fa-github" alt="GitHub"></i> Git / Github</li>
         <li><img src="assets/vscode-icon.svg" alt="VS Code"> VS Code</li>
-        <li><img src="assets/godot-icon.svg" alt="Logo do Godot Engine"> Godot Engine</li>
+        <li><img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-i18n-attr="alt:skills.languages.gdscript.alt"> Godot Engine</li>
       </ul>
     </section>
     
     <section id="contato">
-        <h2>Contato</h2>
+        <h2 data-i18n="contact.title">Contato</h2>
         
-        <p>Perfil do GitHub: <a href="https://github.com/acms2345">acms2345</a></p>
+        <p><span data-i18n="contact.githubProfile">Perfil do GitHub: </span><a href="https://github.com/acms2345">acms2345</a></p>
 
         <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
             <label>
-                Seu email:
+                <span data-i18n="contact.form.email">Seu email:</span>
                 <input type="email" name="email" required>
             </label>
             <div class="input_group">
                 <label>
-                    Sua mensagem:
+                    <span data-i18n="contact.form.message">Sua mensagem:</span>
                     <textarea name="message" required></textarea>
                 </label>
             </div>
             <!-- your other form fields go here -->
             <button class="g-recaptcha" data-sitekey="6Lez9_UsAAAAAK8f96eIN6D_wVTamWBDerHUwNS4"
-            data-callback='onSubmit' data-action='submit' type="submit">Enviar</button>
+            data-callback='onSubmit' data-action='submit' type="submit"><span data-i18n="contact.form.send">Enviar</span></button>
         </form>
 
     </section>
     
     <footer>
-        <p>&copy; 2026 Antonio Carlos. Todos os direitos reservados.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Antonio Carlos. Todos os direitos reservados.</p>
         <p class="build-info">
             <i class="fas fa-code-branch"></i>
             <span class="commitNumber">BUILD_VERSION</span>
@@ -149,7 +154,7 @@
         </p>
         <button class="botao_repositorio">
             <img src="assets/github_logo.svg" alt="GitHub">
-            Repositório
+            <span data-i18n="footer.repository">Repositório</span>
         </button>
     </footer>
     <script src="js/script.js"></script>

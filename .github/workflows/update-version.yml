@@ -5,6 +5,10 @@ on:
     branches:
       - main-clean
 
+concurrency:
+  group: pages-and-build
+  cancel-in-progress: false
+
 jobs:
   update-version:
     runs-on: ubuntu-latest

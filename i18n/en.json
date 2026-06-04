@@ -1,3 +1,54 @@
-{
-    
+{ 
+    "title": "Antonio Carlos - Portfolio",
+
+    "nav.about": "About", 
+    "nav.projects": "Projects", 
+    "nav.skills": "Skills", 
+    "nav.contact": "Contact", 
+
+    "header.subtitle": "Game Developer | Programmer | Student", 
+
+    "about.title": "About me", 
+    "about.description1": "Hello! I'm a 16 year old teenager, who since the age of 3-4 has been developing (mainly games, on platforms like the Godot Engine) for entertainment and as a hobby.", 
+    "about.description2": "I'm currently studying a Computer Science Technician, as I'm looking to qualify in what I like and identify with. Meanwhile, I'm looking to improve myself through some private projects, share them on international platforms such as Macondo and Flavortown, and learn different programming languages; to learn and build the future I intend to pursue in the development area.", 
+
+    "projects.title": "Projects", 
+
+    "projects.viewOnGitHub": "View on GitHub", 
+
+    "projects.chess-in-c.title": "Chess in C ♙", 
+    "projects.chess-in-c.description1": "Because of a school subject I worked on using the C language, I challenged myself to create a local, two-player chess game (no online matches), in terminal format.", 
+    "projects.chess-in-c.description2.pre": "This game was also published in ", 
+    "projects.chess-in-c.description2.post": ", a global programming and challenge platform aimed at teens.", 
+    "projects.chess-in-c.description3": "The game has the following resources:", 
+    "projects.chess-in-c.feature1": "Local chess game for two people;", 
+    "projects.chess-in-c.feature2": "Translation system, with Portuguese and English languages;", 
+    "projects.chess-in-c.feature3": "Game saving and loading system;", 
+    "projects.chess-in-c.feature4": "Using ANSI colors to color the board and add special messages;", 
+    "projects.chess-in-c.feature5": "Move verification system faithful to the official chess rules, including special moves such as castling, drowning, etc.;", 
+    "projects.chess-in-c.feature6": "Game replay system.", 
+    "projects.chess-in-c.alt": "Screenshot of the C chess game, showing a colored board and a move request.", 
+
+    "skills.title": "Skills", 
+    "skills.languages": "Languages", 
+    "skills.languages.c": "C (Intermediate)", 
+    "skills.languages.python": " Python (Basic)", 
+    "skills.languages.html": " HTML (Basic)", 
+    "skills.languages.gdscript": " GDScript (Basic)", 
+    "skills.languages.gdscript.alt": "Godot Engine Logo", 
+    "skills.languages.css": "CSS (Basic)", 
+    "skills.languages.javascript": " JavaScript (Basic)", 
+    "skills.tools": "Tools", 
+
+    "contact.title": "Contact", 
+    "contact.githubProfile": "GitHub Profile: ", 
+    "contact.form.email": "Your email:", 
+    "contact.form.message": "Your message:", 
+    "contact.form.send": "Send", 
+
+    "footer.copyright": "2026 Antonio Carlos. All rights reserved.", 
+    "footer.repository": "Repository"
+
+
+
 }

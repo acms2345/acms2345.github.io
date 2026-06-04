@@ -1,3 +1,54 @@
 {
+    "title": "Antonio Carlos - Portfólio",
+    
+    "nav.about": "Sobre",
+    "nav.projects": "Projetos",
+    "nav.skills": "Habilidades",
+    "nav.contact": "Contato",
+
+    "header.subtitle": "Desenvolvedor de jogos | Programador | Estudante",
+
+    "about.title": "Sobre mim",
+    "about.description1": "Olá! Sou um adolescente de 16 anos, que desde 3-4 anos fazia desenvolvimento (principalmente de jogos, em plataformas como a Godot Engine) por entretenimento e como passatempo.",
+    "about.description2": "Atualmente, estou cursando o Técnico em Informática, pois busco me qualificar naquilo que gosto e me identifico. Enquanto isso, estou buscando me aperfeiçoar por meio de alguns projetos particulares, compartilhá-los em plataformas internacionais como a Macondo e a Flavortown, e aprender diferentes linguagens de programação; para aprender e construir o futuro que pretendo trilhar na área de desenvolvimento.",
+    
+    "projects.title": "Projetos",
+
+    "projects.viewOnGitHub": "Ver no GitHub",
+
+    "projects.chess-in-c.title": "Xadrez em C ♙",
+    "projects.chess-in-c.description1": "Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), no formato de terminal.",
+    "projects.chess-in-c.description2.pre": "Esse jogo também foi publicado na ",
+    "projects.chess-in-c.description2.post": ", uma plataforma de programação e desafio global voltada a adolescentes.",
+    "projects.chess-in-c.description3": "O jogo possui como recursos:",
+    "projects.chess-in-c.feature1": "Partida de xadrez local para duas pessoas;",
+    "projects.chess-in-c.feature2": "Sistema de tradução, tendo as línguas português e inglês;",
+    "projects.chess-in-c.feature3": "Sistema de salvamento e carregamento de partidas;",
+    "projects.chess-in-c.feature4": "Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;",
+    "projects.chess-in-c.feature5": "Sistema de verificação de jogadas fiel às regras oficiais do xadrez, incluindo movmentos especiais como roque, afogamento, etc.;",
+    "projects.chess-in-c.feature6": "Sistema de replay das partidas.",
+    "projects.chess-in-c.alt": "Screenshot do jogo de xadrez em C, mostrando um tabuleiro colorido e uma solicitação de movimento.",
+
+    "skills.title": "Habilidades",
+    "skills.languages": "Linguagens",
+    "skills.languages.c": " C (Intermediário)",
+    "skills.languages.python": " Python (Básico)",
+    "skills.languages.html": " HTML (Básico)",
+    "skills.languages.gdscript": " GDScript (Básico)",
+    "skills.languages.gdscript.alt": "Logo do Godot Engine",
+    "skills.languages.css": " CSS (Básico)",
+    "skills.languages.javascript": " JavaScript (Básico)",
+    "skills.tools": "Ferramentas",
+
+    "contact.title": "Contato",
+    "contact.githubProfile": "Perfil do GitHub: ",
+    "contact.form.email": "Seu email:",
+    "contact.form.message": "Sua mensagem:",
+    "contact.form.send": "Enviar",
+
+    "footer.copyright": "2026 Antonio Carlos. Todos os direitos reservados.",
+    "footer.repository": "Repositório"
+
+    
     
 }
