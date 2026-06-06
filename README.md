@@ -18,7 +18,18 @@ Made with HTML, CSS, JavaScript and the i18next system for internationalization.
 
 ## "Where to view it?"
 
-[Link to the website here.](https://acms2345.github.io)
+[Link to the website here.](https://acms.me)
+
+### "How to clone the repository?"
+
+1. Open the terminal or command prompt.
+2. Navigate to the directory where you want to clone the repository using the `cd` command (example: `cd Documents/Projects`).
+3. Use the `git clone` command followed by the URL of the repository to clone it (or you just download the ZIP file from GitHub and extract it):
+```bash
+git clone https://github.com/acms2345/acms2345.github.io.git
+```
+4. Open the cloned directory using the `cd` command (example: `cd acms2345.github.io`).
+5. Now you can open the `index.html` file in a browser to view the site locally.
 
 ## Projects displayed
 
@@ -67,7 +78,22 @@ Feito com HTML, CSS, JavaScript e sistema i18next para internacionalização.
 
 ## "Onde visualizar?"
 
-[Link para o site aqui.](https://acms2345.github.io)
+
+
+## "Como usar o site?"
+
+[Link para o site aqui.](https://acms.me)
+
+### "Como clonar o repositório?"
+
+1. Abra o terminal ou prompt de comando.
+2. Navegue até o diretório onde deseja clonar o repositório usando o comando `cd` (exemplo: `cd Documents/Projects`).
+3. Use o comando `git clone` seguido do URL do repositório para cloná-lo (ou você pode simplesmente baixar o arquivo ZIP do GitHub e extraí-lo):
+```bash 
+git clone https://github.com/acms2345/acms2345.github.io.git
+```
+4. Abra o diretório clonado usando o comando `cd` (exemplo: `cd acms2345.github.io`).
+5. Agora você pode abrir o arquivo `index.html` em um navegador para visualizar o site localmente.
 
 ## Projetos exibidos
 
