@@ -31,12 +31,12 @@
 
     "skills.title": "Skills", 
     "skills.languages": "Languages", 
-    "skills.languages.c": "C (Intermediate)", 
+    "skills.languages.c": " C (Intermediate)", 
     "skills.languages.python": " Python (Basic)", 
     "skills.languages.html": " HTML (Basic)", 
     "skills.languages.gdscript": " GDScript (Basic)", 
     "skills.languages.gdscript.alt": "Godot Engine Logo", 
-    "skills.languages.css": "CSS (Basic)", 
+    "skills.languages.css": " CSS (Basic)", 
     "skills.languages.javascript": " JavaScript (Basic)", 
     "skills.tools": "Tools", 
 
