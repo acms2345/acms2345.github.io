@@ -94,7 +94,7 @@ nav button[data-lang] {
     background: transparent;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 10px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
     border-radius: 5px;
