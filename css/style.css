@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+/* Força os elementos de formulário a herdarem a fonte do elemento pai */
+input, textarea, button, select {
+    font-family: inherit;
+}
+
 body {
     font-family: "Google Sans", sans-serif;
     line-height: 1.6;
