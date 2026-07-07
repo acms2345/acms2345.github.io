@@ -144,14 +144,22 @@ nav button[data-lang]:hover {
     box-sizing: border-box;
 }
 
-.projeto-screenshot {
+.projeto-midia {
     flex: 0 0 40%;
 }
 
-.projeto-screenshot img {
+.projeto-midia img {
     border-radius: 8px;
     max-width: 100%;
 }
+
+.projeto-midia video {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .projeto-informacoes {
     flex: 1;
