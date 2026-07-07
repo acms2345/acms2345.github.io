@@ -309,12 +309,17 @@ footer a {
         flex: 1;
     }
 
-    .projeto-screenshot img{
+    .projeto-midia img{
         width: 100%;
         max-width: 300px;
     }
 
-    .projeto-screenshot{
+    .projeto-midia video{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projeto-midia{
         min-width: unset;
         flex: 0 0 auto;
         width: 100%;
