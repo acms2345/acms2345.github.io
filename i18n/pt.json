@@ -31,13 +31,9 @@
 
     "skills.title": "Habilidades",
     "skills.languages": "Linguagens",
-    "skills.languages.c": " C (Intermediário)",
-    "skills.languages.python": " Python (Básico)",
-    "skills.languages.html": " HTML (Básico)",
-    "skills.languages.gdscript": " GDScript (Básico)",
-    "skills.languages.gdscript.alt": "Logo do Godot Engine",
-    "skills.languages.css": " CSS (Básico)",
-    "skills.languages.javascript": " JavaScript (Básico)",
+    "skills.languages.knowledge.basic": "(Básico)", 
+    "skills.languages.knowledge.intermediate": "(Intermediário)", 
+    "skills.languages.gdscript.alt": "Logo da Godot Engine", 
     "skills.tools": "Ferramentas",
 
     "contact.title": "Contato",

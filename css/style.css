@@ -200,6 +200,29 @@ ol, ul {
     background: #764ba2;
 }
 
+.skills_lista {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_card {
+    width: fit-content;
+    align-items: center;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    
+    border: 2px solid #764ba2;
+    border-radius: 15px;
+    
+}
+
+.skill_card .linguagem_nivel {
+    font-size: 11px;
+}
+
 /* Responsivo - Mobile */
 @media (max-width: 768px) {
     .projetos-container {
@@ -212,8 +235,8 @@ ol, ul {
 }
 
 .icon-godot {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
 }
 
