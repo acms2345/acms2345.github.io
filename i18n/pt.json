@@ -35,6 +35,7 @@
     "skills.languages.knowledge.intermediate": "(Intermediário)", 
     "skills.languages.gdscript.alt": "Logo da Godot Engine", 
     "skills.tools": "Ferramentas",
+    "skills.tools.figma.alt" : "Logo do Figma",
 
     "contact.title": "Contato",
     "contact.githubProfile": "Perfil do GitHub: ",
