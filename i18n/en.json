@@ -39,7 +39,7 @@
     "skills.tools.figma.alt" : "Figma Logo",
 
     "contact.title": "Contact", 
-    "contact.githubProfile": "GitHub Profile: ", 
+    "contact.githubProfile": " GitHub Profile", 
     "contact.form.email": "Your email:", 
     "contact.form.message": "Your message:", 
     "contact.form.send": "Send", 

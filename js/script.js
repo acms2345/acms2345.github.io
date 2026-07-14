@@ -38,6 +38,13 @@ document.querySelector('.botao_repositorio').addEventListener('click', function(
     window.location.href = 'https://github.com/acms2345/acms2345.github.io';
 });
 
+
+document.querySelector('.botao_perfilGithub').addEventListener('click', function() {
+    window.location.href = 'https://github.com/acms2345';
+});
+
+
+
 // Highlight do menu ao scrollar
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');

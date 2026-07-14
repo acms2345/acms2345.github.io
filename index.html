@@ -173,13 +173,21 @@
     
     <section id="contato">
         <h2 data-i18n="contact.title">Contato</h2>
-        
-        <p><span data-i18n="contact.githubProfile">Perfil do GitHub: </span><a href="https://github.com/acms2345">acms2345</a></p>
 
+        <div class="botoesContato">
+
+            
+
+            <button class="botao_perfilGithub">
+                <img src="assets/github_logo.svg" alt="GitHub">
+                <span data-i18n="contact.githubProfile">Perfil do GitHub</span>
+            </button>
+        </div>
+        
         <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
             <label>
                 <span data-i18n="contact.form.email">Seu email:</span>
-                <input type="email" name="email" required>
+                <input type="email" name="_replyto" required>
             </label>
             <div class="input_group">
                 <label>
@@ -204,7 +212,7 @@
             </a>
         </p>
         <button class="botao_repositorio">
-            <img src="assets/github_logo.svg" alt="GitHub">
+            <img src="assets/github_logo.svg" alt="GitHub" style="filter: brightness(0) invert(1);">
             <span data-i18n="footer.repository">Repositório</span>
         </button>
     </footer>
