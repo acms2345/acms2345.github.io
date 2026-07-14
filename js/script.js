@@ -38,6 +38,10 @@ document.querySelector('.botao_repositorio').addEventListener('click', function(
     window.location.href = 'https://github.com/acms2345/acms2345.github.io';
 });
 
+document.querySelector('.botaoEmail').addEventListener('click', function() {
+    window.location.href = 'mailto:acmsme@duck.com';
+});
+
 
 document.querySelector('.botao_perfilGithub').addEventListener('click', function() {
     window.location.href = 'https://github.com/acms2345';
