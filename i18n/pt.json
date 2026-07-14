@@ -25,7 +25,7 @@
     "projects.chess-in-c.feature2": "Sistema de tradução, tendo as línguas português e inglês;",
     "projects.chess-in-c.feature3": "Sistema de salvamento e carregamento de partidas;",
     "projects.chess-in-c.feature4": "Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;",
-    "projects.chess-in-c.feature5": "Sistema de verificação de jogadas fiel às regras oficiais do xadrez, incluindo movmentos especiais como roque, afogamento, etc.;",
+    "projects.chess-in-c.feature5": "Sistema de verificação de jogadas fiel às regras oficiais do xadrez, incluindo movimentos especiais como roque, afogamento, etc.;",
     "projects.chess-in-c.feature6": "Sistema de replay das partidas.",
     "projects.chess-in-c.alt": "Screenshot do jogo de xadrez em C, mostrando um tabuleiro colorido e uma solicitação de movimento.",
 
