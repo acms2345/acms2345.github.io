@@ -131,7 +131,7 @@ nav button[data-lang]:hover {
 
 /* Container com Grid */
 .projetos-container {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
@@ -148,6 +148,13 @@ nav button[data-lang]:hover {
     width: 100%;
     box-sizing: border-box;
 }
+
+.botoes_projeto {
+    display: flex;
+    gap: 10px;
+    
+}
+
 
 .projeto-midia {
     flex: 0 0 40%;
@@ -327,6 +334,10 @@ ol, ul {
     width: 100%;
     font-size: 1em;
     border: 1px solid #cccccc;
+}
+
+#FormularioContato textarea {
+    max-height: 300px;
 }
 
 /* Footer */

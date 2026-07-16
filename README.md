@@ -76,9 +76,6 @@ Esse site é um portfólio pessoal. Ele foi criado com o objetivo de:
 - Dar a possibilidade de entrar em contato mais diretamente.
 Feito com HTML, CSS, JavaScript e sistema i18next para internacionalização.
 
-## "Onde visualizar?"
-
-
 
 ## "Como usar o site?"
 
@@ -99,7 +96,7 @@ git clone https://github.com/acms2345/acms2345.github.io.git
 
 ### Xadrez em C ♙
 
-Este é um jogo de xadrez para dois jogadores (de forma local, ou seja, sem sistema de multiplayer online).
+Este é um jogo de xadrez para dois jogadores de forma local (ou seja, sem sistema de multiplayer online) no estilo de terminal.
 
 Link do repositório: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
 Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases).
