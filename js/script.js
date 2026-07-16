@@ -142,3 +142,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//O código a seguir faz a mudança de tema (claro/escuro)
+
+const HTMLbody = document.body
+const themeChangeButton = document.querySelector('.theme-change_button')
+
+const temaSalvo = localStorage.getItem('theme')
+const prefereModoEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if(temaSalvo === 'dark' || (!temaSalvo && prefereModoEscuro)){
+    HTMLbody.classList.add('darkmode')
+    themeChangeButton.classList.add('black');
+    themeChangeButton.classList.remove('white');
+} else {
+    themeChangeButton.classList.add('white');
+}
+
+themeChangeButton.addEventListener('click', function() {
+    const modoEscuroAtivado = HTMLbody.classList.toggle('darkmode');
+    if (!modoEscuroAtivado){
+        HTMLbody.classList.remove('darkmode')
+        
+        themeChangeButton.classList.toggle('white');
+        themeChangeButton.classList.remove('black');
+    } else {
+        HTMLbody.classList.add('darkmode')
+        
+        themeChangeButton.classList.remove('white');
+        themeChangeButton.classList.toggle('black');
+    }
+})
+
+

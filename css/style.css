@@ -1,6 +1,28 @@
 :root {
-    --gradiente: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --roxo: #764ba2;
+    --azul: #667eea; 
+    --gradiente: linear-gradient(135deg, var(--azul) 0%, var(--roxo) 100%);
+    --cor-texto: #333;
+    --cor-texto-weak: #8987a2;
+    --cor-infoblocks: #f4f4f4;
+    --background-color: #fff;
+    --footer-bg: #1E293B;
+    --repo-hover: #243042;
+    --accent: var(--azul);
+    --accent-hover: var(--roxo)
 }
+
+body.darkmode {
+    --cor-texto: #FCFAFA;
+    --cor-texto-weak: #a8a6c4;
+    --cor-infoblocks: #1E293B; 
+    --background-color: #0F172A;
+    --footer-bg: #060B14;
+    --repo-hover: #162136;
+    --accent: #8b9bf4;           /* azul um pouco mais claro pra manter contraste no escuro */
+    --accent-hover: #a685c2;
+}
+
 
 /* Reset e estilos gerais */
 * {
@@ -15,9 +37,11 @@ input, textarea, button, select {
 }
 
 body {
+    color: var(--cor-texto);
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
     font-family: "Google Sans", sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
 /* Header - Apresentação */
@@ -73,6 +97,36 @@ h2, h3 {
   }
 }
 
+.theme-change_button {
+    background: transparent;
+    display: flex;
+    border: transparent;
+    padding: 5px;
+    appearance: unset;
+}
+
+.theme-change_button :hover {
+    background: rgba(255,255,255, 0.2);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+.theme-change_button.white .white-theme_icon {
+    display: block;
+}
+.theme-change_button.white .black-theme_icon {
+    display: none;
+}
+
+
+
+.theme-change_button.black .white-theme_icon {
+    display: none;
+}
+.theme-change_button.black .black-theme_icon {
+    display: block;
+}
+
+
 section {
     padding: 60px 20px;
     max-width: 1200px;
@@ -82,13 +136,13 @@ section {
 section h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid var(--azul);
     padding-bottom: 10px;
 }
 
 /* Navegação */
 nav {
-    background:#2c3e50;
+    background: var(--azul);
     padding: 15px 20px;
     position: sticky;
     top: 0;
@@ -120,11 +174,12 @@ nav button[data-lang]:hover {
 }
 
 .sobre-conteudo {
-    background: #f4f4f4;
+    background: var(--cor-infoblocks);
+    transition: transform 0.3s ease, opacity ease;
     border-radius: 8px;
     padding: 30px;
     font-size: 16px;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid var(--accent);
 }
 
 
@@ -137,14 +192,15 @@ nav button[data-lang]:hover {
 }
 
 .projeto {
+    background: var(--cor-infoblocks);
+    transition: transform 0.3s ease, opacity ease;
     display: flex;
     gap: 30px;
     align-items: stretch;
-    background: #f4f4f4;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid var(--azul);
     width: 100%;
     box-sizing: border-box;
 }
@@ -193,19 +249,19 @@ nav button[data-lang]:hover {
 }
 
 .projeto h3 {
-    color: #667eea;
+    color: var(--azul);
     margin-bottom: 10px;
 }
 
 .projeto a {
-    color: #667eea;
+    color: var(--azul);
     font-weight: bold;
     transition: color 0.3s;
     
 }
 
 .projeto a:hover:not(.btn-projeto){
-    color: #764ba2;
+    color: var(--accent-hover);
 }
 
 ol, ul {
@@ -216,7 +272,7 @@ ol, ul {
 /* Botão do Projeto */
 .projeto .btn-projeto {
     display: inline-block;
-    background: #667eea;
+    background: var(--azul);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -225,7 +281,7 @@ ol, ul {
 }
 
 .projeto .btn-projeto:hover {
-    background: #764ba2;
+    background: var(--accent-hover);
 }
 
 .skills_lista {
@@ -243,7 +299,7 @@ ol, ul {
     box-sizing: border-box;
     margin: 10px 10px;
     
-    border: 2px solid #764ba2;
+    border: 2px solid var(--roxo);
     border-radius: 15px;
     
 }
@@ -273,18 +329,18 @@ ol, ul {
 
 
 #contato a{
-    color: #667eea;
+    color: var(--accent);
     font-weight: bold;
     transition: color 0.3s;
 }
 #contato a:hover{
-    color: #764ba2;
+    color: var(--accent-hover);
 }
 
 #contato button{
     border: none;
     color: white;
-    background: #667eea;
+    background: var(--accent);
     transition: background 0.3s;
     font-weight: bold;
     cursor: pointer;
@@ -299,7 +355,7 @@ ol, ul {
 }
 
 #contato button:hover {
-    background: #764ba2;
+    background: var(--accent-hover);
 }
 
 .botoesContato {
@@ -310,13 +366,14 @@ ol, ul {
 
 #FormularioContato label{
     display: block;
-    color: #8987a2;
+    color: var(--cor-texto-weak);
+    transition: transform 0.3s ease, opacity ease;
 }
 
 #FormularioContato button{
     border: none;
     color: white;
-    background: #667eea;
+    background: var(--accent);
     transition: background 0.3s;
     font-weight: bold;
     cursor: pointer;
@@ -325,7 +382,7 @@ ol, ul {
 }
 
 #FormularioContato button:hover {
-    background: #764ba2;
+    background: var(--accent-hover);
 }
 
 #FormularioContato input, #FormularioContato textarea{
@@ -333,7 +390,9 @@ ol, ul {
     border-radius: 6px;
     width: 100%;
     font-size: 1em;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--cor-texto-weak);
+    background: var(--background-color);
+    transition: transform 0.3s ease, opacity ease;
 }
 
 #FormularioContato textarea {
@@ -342,14 +401,14 @@ ol, ul {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: var(--footer-bg);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
 footer a {
-    color: #3498db;
+    color: var(--accent);
     margin: 0 10px;
 }
 
@@ -359,7 +418,7 @@ footer a {
 }
 
 .build-info a{
-    color: #667eea;
+    color: var(--accent);
     font-weight: bold;
     transition: color 0.3s;
 
@@ -411,7 +470,7 @@ footer a {
     align-items: center;
     gap: 8px;
 
-    background: #2c3e50;
+    background: var(--footer-bg);
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -423,7 +482,7 @@ footer a {
 }
 
 .botao_repositorio:hover {
-    background: #555;
+    background: var(--repo-hover);
 }
 
 .botao_repositorio img {
