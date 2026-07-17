@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const HTMLbody = document.body
 const themeChangeButton = document.querySelector('.theme-change_button')
+const img_Hackatime_stats = document.querySelector('.img_Hackatime_stats')
+const img_Hackatime_statslinkLight = "https://github-readme-stats.hackclub.dev/api/wakatime?username=24102&api_domain=hackatime.hackclub.com&theme=default&custom_title=Programming+Stats&layout=compact&cache_seconds=0&langs_count=8&title_color=667eea&bg_color=f4f4f4&text_color=333&border_color=667eea"
+const img_Hackatime_statslinkDark = "https://github-readme-stats.hackclub.dev/api/wakatime?username=24102&api_domain=hackatime.hackclub.com&theme=default&custom_title=Programming+Stats&layout=compact&cache_seconds=0&langs_count=8&title_color=667eea&bg_color=1E293B&text_color=FCFAFA&border_color=667eea"
 
 const temaSalvo = localStorage.getItem('theme')
 const prefereModoEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -155,8 +158,12 @@ if(temaSalvo === 'dark' || (!temaSalvo && prefereModoEscuro)){
     HTMLbody.classList.add('darkmode')
     themeChangeButton.classList.add('black');
     themeChangeButton.classList.remove('white');
+    img_Hackatime_stats.src = img_Hackatime_statslinkDark
+
+    
 } else {
     themeChangeButton.classList.add('white');
+    img_Hackatime_stats.src = img_Hackatime_statslinkLight
 }
 
 themeChangeButton.addEventListener('click', function() {
@@ -166,11 +173,13 @@ themeChangeButton.addEventListener('click', function() {
         
         themeChangeButton.classList.toggle('white');
         themeChangeButton.classList.remove('black');
+        img_Hackatime_stats.src = img_Hackatime_statslinkLight
     } else {
         HTMLbody.classList.add('darkmode')
         
         themeChangeButton.classList.remove('white');
         themeChangeButton.classList.toggle('black');
+        img_Hackatime_stats.src = img_Hackatime_statslinkDark
     }
 })
 
