@@ -1,5 +1,7 @@
 # Acms' Portfolio
 
+![Site screenshot (black theme)](assets/black-theme_screenshot.png)
+
 [Versão em português abaixo / Portuguese version below](#Versão-em-português)
 
 # English version
@@ -41,13 +43,26 @@ Repository link: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/X
 
 Link to download the game: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases)
 
+### GeradorABNTPy 📄
+
+Python algorithm (still under development) for automated citation and bibliography collections, in the Brasilian Association of Technical Standards (ABNT) citation model.
+
+Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
+
+
 ## Portfolio Resources 📋
 
 - Responsive design;
 
 - Hamburger menu for mobile;
 
-- Contact form.
+- Contact form;
+
+- Black and white themes;
+
+- Translation via i18n (PT/EN);
+
+- Hackatime badges.
 
 ## Tools used ⚙️
 
@@ -59,12 +74,18 @@ Link to download the game: [github.com/acms2345/Xadrez-em-C/releases](https://gi
 
 - For fonts and images: Google Fonts;
 
-- Formspree and reCAPTCHA for the contact form.
+- Formspree and reCAPTCHA for the contact form;
+
+- Hackatime for collecting and displaying statistics.
 
 ## Contact 👤
 
 - Github Profile: [acms2345](https://github.com/acms2345)
 - Contact: [acms2345.github.io/#contato](https://acms2345.github.io/#contato)
+
+## License
+
+The source code (not the personal content) is under MIT license. Read `LICENSE` file for further details.
 
 # Versão em português
 
@@ -101,11 +122,21 @@ Este é um jogo de xadrez para dois jogadores de forma local (ou seja, sem siste
 Link do repositório: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
 Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases).
 
+### GeradorABNTPy 📄
+
+Algoritmo em Python (ainda em desenvolvimento) para coletar citações e referências bibliográficas automaticamente de site, no modelo da Associação Brasileira de Normas Técnicas (ABNT).
+
+Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
+
+
 ## Recursos do portfólio 📋
 
 - Design responsivo;
 - Menu hamburger para mobile;
-- Formulário para contato.
+- Formulário para contato;
+- Estilos claro e escuro de layout;
+- Tradução via i18n;
+- Estatísticas do Hackatime.
 
 ##  Ferramentas usadas ⚙️
 
@@ -113,10 +144,15 @@ Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://gith
 - CSS;
 - JavaScript;
 - Para fontes e imagens: Google Fonts;
-- Formspree e reCAPTCHA para o formulário de contato.
+- Formspree e reCAPTCHA para o formulário de contato;
+- Hackatime para a coleta e exibição das estatísticas.
 
 ## Contato 👤
 
 - Perfil do Github: [acms2345](https://github.com/acms2345)
 - Contato: [acms2345.github.io/#contato](https://acms2345.github.io/#contato)
+
+## Licença 
+
+O código-fonte desse repositório (não o conteúdo pessoal) está sob a licença MIT. Para mais detalhes, consulte o arquivo `LICENSE`.
 

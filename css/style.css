@@ -9,7 +9,8 @@
     --footer-bg: #1E293B;
     --repo-hover: #243042;
     --accent: var(--azul);
-    --accent-hover: var(--roxo)
+    --accent-hover: var(--roxo);
+    --img-color-filter: invert(0);
 }
 
 body.darkmode {
@@ -21,6 +22,7 @@ body.darkmode {
     --repo-hover: #162136;
     --accent: #8b9bf4;           /* azul um pouco mais claro pra manter contraste no escuro */
     --accent-hover: #a685c2;
+    --img-color-filter: brightness(0) invert(1);
 }
 
 
@@ -299,9 +301,13 @@ ol, ul {
     box-sizing: border-box;
     margin: 10px 10px;
     
-    border: 2px solid var(--roxo);
+    border: 2px solid var(--azul);
     border-radius: 15px;
     
+}
+
+.skill_card img {
+    filter: var(--img-color-filter);
 }
 
 .skill_card .linguagem_nivel {
