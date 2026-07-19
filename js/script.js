@@ -174,12 +174,16 @@ themeChangeButton.addEventListener('click', function() {
         themeChangeButton.classList.toggle('white');
         themeChangeButton.classList.remove('black');
         img_Hackatime_stats.src = img_Hackatime_statslinkLight
+        
+        localStorage.setItem('theme') = 'light'
     } else {
         HTMLbody.classList.add('darkmode')
         
         themeChangeButton.classList.remove('white');
         themeChangeButton.classList.toggle('black');
         img_Hackatime_stats.src = img_Hackatime_statslinkDark
+
+        localStorage.setItem('theme') = 'dark'
     }
 })
 
