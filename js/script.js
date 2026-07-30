@@ -77,8 +77,6 @@ async function loadVersionInfo() {
     if (!dadosJson.ok) return;
     //Se não conseguir coletar os dados, encerra a função.
     const verificacao = await dadosJson.json();
-
-    document.querySelector('.commitNumber').textContent = `Build ${verificacao.buildNumber}`;
     
     const linkCommit = document.querySelector('.commitURL');
     linkCommit.href = verificacao.commitURL;
