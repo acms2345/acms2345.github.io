@@ -26,19 +26,16 @@ jobs:
         id: version
         run: |
           SHORT_SHA=$(git rev-parse --short HEAD)
-          BUILD_NUMBER=$(git rev-list --count HEAD)
           FULL_SHA=$(git rev-parse HEAD)
           COMMIT_URL="https://github.com/${{ github.repository }}/commit/${FULL_SHA}"
           
           echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_OUTPUT
-          echo "BUILD_NUMBER=${BUILD_NUMBER}" >> $GITHUB_OUTPUT
           echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_OUTPUT
 
       - name: Update version.json
         run: |
           cat > version.json <<EOF
           {
-            "buildNumber" : "${{ steps.version.outputs.BUILD_NUMBER }}",
             "shortSha": "${{ steps.version.outputs.SHORT_SHA }}",
             "commitURL": "${{ steps.version.outputs.COMMIT_URL }}"
           }
