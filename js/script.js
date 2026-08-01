@@ -5,47 +5,60 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const menuBtn = document.getElementById('menuBtn');
     const navMenu = document.getElementById('navMenu');
+
+    if (menuBtn && navMenu){
     
-    //Ao clicar no menu
-    menuBtn.addEventListener('click', function(){
-      menuBtn.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-    
-    document.querySelectorAll('.navMenu a').forEach(link => {
-      link.addEventListener('click', function(){
+        //Ao clicar no menu
+        menuBtn.addEventListener('click', function(){
         menuBtn.classList.toggle('active');
         navMenu.classList.toggle('active');
-      });
-    })
-    
-    //Fechar ao clicar fora
-    document.addEventListener('click', function(e) {
-    if (!e.target.closest('nav')) {
-        menuBtn.classList.remove('active');
-        navMenu.classList.remove('active');
+        });
+        
+        document.querySelectorAll('.navMenu a').forEach(link => {
+        link.addEventListener('click', function(){
+            menuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        })});
+        
+        //Fechar ao clicar fora
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                menuBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
     }
     
-    });
 
     loadLanguage();
 
 });
 
 
+botaoRepositorio = document.querySelector('.botao_repositorio')
 
-document.querySelector('.botao_repositorio').addEventListener('click', function() {
-    window.location.href = 'https://github.com/acms2345/acms2345.github.io';
-});
-
-document.querySelector('.botaoEmail').addEventListener('click', function() {
-    window.location.href = 'mailto:acmsme@duck.com';
-});
+if (botaoRepositorio){
+    document.querySelector('.botao_repositorio').addEventListener('click', function() {
+        window.location.href = 'https://github.com/acms2345/acms2345.github.io';
+    });
+}
 
 
-document.querySelector('.botao_perfilGithub').addEventListener('click', function() {
-    window.location.href = 'https://github.com/acms2345';
-});
+botaoEmail = document.querySelector('.botaoEmail')
+
+if (botaoEmail){
+    botaoEmail.addEventListener('click', function() {
+        window.location.href = 'mailto:acmsme@duck.com';
+    });
+}
+
+botaoPerfilGithub = document.querySelector('.botao_perfilGithub')
+
+if (botaoPerfilGithub){
+    botaoPerfilGithub.addEventListener('click', function() {
+        window.location.href = 'https://github.com/acms2345';
+    });
+}
 
 
 
@@ -62,17 +75,19 @@ window.addEventListener('scroll', function() {
         }
     });
     
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
+    if (navLinks){
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    }
 });
 
 /*Essa função coleta os dados do JSON, e os adiciona no HTML */
 async function loadVersionInfo() {
-    const dadosJson = await fetch('../version.json', {cache: 'no-store'});
+    const dadosJson = await fetch(resolveAsset('version.json'), {cache: 'no-store'});
     //Coleta os dados do JSON
     if (!dadosJson.ok) return;
     //Se não conseguir coletar os dados, encerra a função.
@@ -86,9 +101,19 @@ async function loadVersionInfo() {
 
 document.addEventListener('DOMContentLoaded', loadVersionInfo);
 
+function getSiteBaseUrl() {
+    const script = Array.from(document.scripts).find(s => s.src.includes('/js/script.js'));
+    if (!script) return window.location.href;
+    return new URL('../', script.src).href;
+}
+
+function resolveAsset(path) {
+    return new URL(path, getSiteBaseUrl());
+}
+
 async function setLanguage(linguagem) {
     try {
-        const resposta = await fetch(`i18n/${linguagem}.json`, {cache: 'no-store'});
+        const resposta = await fetch(resolveAsset(`i18n/${linguagem}.json`), {cache: 'no-store'});
         //Coleta os dados do JSON
         if (!resposta.ok) return;
         //Se não conseguir coletar os dados, encerra a função.
@@ -156,12 +181,16 @@ if(temaSalvo === 'dark' || (!temaSalvo && prefereModoEscuro)){
     HTMLbody.classList.add('darkmode')
     themeChangeButton.classList.add('black');
     themeChangeButton.classList.remove('white');
-    img_Hackatime_stats.src = img_Hackatime_statslinkDark
+    if (img_Hackatime_stats){
+        img_Hackatime_stats.src = img_Hackatime_statslinkDark
+    }
 
     
 } else {
     themeChangeButton.classList.add('white');
-    img_Hackatime_stats.src = img_Hackatime_statslinkLight
+    if (img_Hackatime_stats) {
+        img_Hackatime_stats.src = img_Hackatime_statslinkLight
+    }
 }
 
 themeChangeButton.addEventListener('click', function() {
@@ -171,7 +200,9 @@ themeChangeButton.addEventListener('click', function() {
         
         themeChangeButton.classList.toggle('white');
         themeChangeButton.classList.remove('black');
-        img_Hackatime_stats.src = img_Hackatime_statslinkLight
+        if (img_Hackatime_stats){
+            img_Hackatime_stats.src = img_Hackatime_statslinkLight
+        }
         
         localStorage.setItem('theme') = 'light'
     } else {
@@ -179,7 +210,9 @@ themeChangeButton.addEventListener('click', function() {
         
         themeChangeButton.classList.remove('white');
         themeChangeButton.classList.toggle('black');
-        img_Hackatime_stats.src = img_Hackatime_statslinkDark
+        if (img_Hackatime_stats){
+            img_Hackatime_stats.src = img_Hackatime_statslinkDark
+        }
 
         localStorage.setItem('theme') = 'dark'
     }
