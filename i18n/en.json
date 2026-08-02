@@ -77,6 +77,7 @@
     "geradorabntdemo.errorScreen.errors.unexpectedError" : "An unexpected error occurred.",
 
     "geradorabntdemo.report.somethingWrong?" : "Did something not go as it should have?",
+    "geradorabntdemo.report.reportHereButton" : "Report it here so it can be fixed!",
     "geradorabntdemo.report.whatsWrong?" : "What is wrong? (optional field)",
     "geradorabntdemo.report.submitted" : "Report submitted! Thank you!"
 

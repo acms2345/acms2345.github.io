@@ -433,7 +433,7 @@ footer a {
 
 /* Responsivo - Mobile */
 @media (max-width: 768px) {
-    header h1 {
+    h1 {
         font-size: 32px;
     }
     
@@ -632,4 +632,12 @@ footer a {
     border: 1px solid var(--cor-texto-weak);
     background: var(--background-color);
     transition: transform 0.3s ease, opacity ease;
+}
+
+/* Responsivo - Mobile */
+@media (max-width: 768px){
+    .citacao, .report{
+        max-width: 100%;
+    }
+
 }
