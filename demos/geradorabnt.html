@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Gerador ABNT (por Antonio Carlos)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <button data-lang="pt" title="Português"><i class="fas fa-globe"></i> PT</button>
+        <button data-lang="en" title="English"><i class="fas fa-globe"></i> EN</button>
+        <button class="theme-change_button white">
+            <img src="../assets/sun_icon.svg" class="black-theme_icon">
+            <img src="../assets/moon_icon.svg" class="white-theme_icon">
+        </button>
+    </nav>
+
+    <h1 data-i18n="geradorabntdemo.title">Gerador de referências ABNT</h1>
+
+    <section class="sistema">
+        <input type="url" placeholder="Insira aqui o link para ser citado..." data-i18n-attr="placeholder:geradorabntdemo.inputLink.placeholder" class="inputLink">
+        <button class="botaoEnvioLink" disabled style="cursor: not-allowed;" data-i18n="contact.form.send">Enviar</button>
+        <p data-i18n="geradorabntdemo.description.adviceStillInDevelopment">Atenção: o sistema ainda está em desenvolvimento. 
+            Por favor, verifique os resultados antes de inseri-los em seus trabalhos acadêmicos.</p>
+        <p data-i18n="geradorabntdemo.description.adviceForEN"></p>
+    </section>
+
+    <section class="loadingScreen" style="display: none;">
+        <div class="loadingAnimation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p data-i18n="geradorabntdemo.loadingMessage"> Aguarde o processamento do sistema...</p>
+    </section>
+
+    <section class="resultadosCitacao" style="display: none;">
+        <h3 data-i18n="geradorabntdemo.results.title">Resultados</h3>
+        <div class="citacao">
+            <h4 data-i18n="geradorabntdemo.results.citationTitle">Citação</h4>
+            <p class="citacaoInLineTexto"></p>
+            <button onclick="copiarTexto(this, '.citacaoInLineTexto')">
+                <i class="fa-regular fa-copy"></i>
+                <span class="textoBotaoCopiar" data-i18n="geradorabntdemo.results.copyButton">Copiar!</span>
+            </button>
+        </div>
+        <div class="citacao">
+            <h4 data-i18n="geradorabntdemo.results.referenceTitle">Referência</h4>
+            <p class="citacaoRefTexto"></p>
+            <button onclick="copiarTexto(this, '.citacaoRefTexto')">
+                <i class="fa-regular fa-copy"></i>
+                <span class="textoBotaoCopiar" data-i18n="geradorabntdemo.results.copyButton">Copiar!</span>
+            </button>
+        </div>
+        <div id="report">
+            <p data-i18n="geradorabntdemo.report.somethingWrong?">Algo não saiu como deveria?</p>
+            <a id="openReportButton" style="cursor: pointer;" data-i18n="geradorabntdemo.report.reportHereButton">Reporte aqui para que possa ser consertado!</a>
+            <div id="formReport" style="display: none;">
+                <label>
+                    <span data-i18n="geradorabntdemo.report.whatsWrong?"></span>
+                    <textarea id="OptionalCommentInput"></textarea>
+                </label>
+                
+                <button id="reportButton" onclick="enviarReporte(document.getElementById('OptionalCommentInput').value.trim())" data-i18n="contact.form.send">Enviar!</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="exibicaoErro" style="display: none;">
+        <div class="blocoExibicaoErro">
+            <p><b data-i18n="geradorabntdemo.errorScreen.title">Erro ao enviar o link!</b></p>
+            <p class="erroTexto"></p>
+            
+        </div>
+    </section>
+
+    <section class="sobreOProjeto">
+
+    </section>
+
+    <footer>
+        <p data-i18n="footer.copyright">&copy; 2026 Antonio Carlos. Código-fonte sob licença MIT - Conteúdo pessoal: Todos os direitos reservados.</p>
+        <p class="build-info">
+            <i class="fas fa-code-branch"></i>
+            <a href="COMMIT_URL" target="_blank" rel="noopener noreferrer" class="commitURL">
+                Build: <code class="commitHash">COMMIT_HASH</code>
+            </a>
+        </p>
+        <button class="botao_repositorio">
+            <img src="../assets/github_logo.svg" alt="GitHub" style="filter: brightness(0) invert(1);">
+            <span data-i18n="footer.repository">Repositório</span>
+        </button>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/geradorabnt.js"></script>
+</body>
+</html>

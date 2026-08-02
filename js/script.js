@@ -111,6 +111,8 @@ function resolveAsset(path) {
     return new URL(path, getSiteBaseUrl());
 }
 
+let dicionarioAtual = {};
+
 async function setLanguage(linguagem) {
     try {
         const resposta = await fetch(resolveAsset(`i18n/${linguagem}.json`), {cache: 'no-store'});
@@ -118,6 +120,7 @@ async function setLanguage(linguagem) {
         if (!resposta.ok) return;
         //Se não conseguir coletar os dados, encerra a função.
         const dicio = await resposta.json();
+        dicionarioAtual = dicio
 
         // Aplicar em elementos com data-i18n (texto)
         document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -155,6 +158,10 @@ async function loadLanguage() {
     const defaultLang = browserLang.startsWith('pt') ? 'pt' 
     : browserLang.startsWith('en') ? 'en' : 'en';
     setLanguage(defaultLang);
+}
+
+function traduzirManualmente(idTexto, textoFallback = ''){
+    return dicionarioAtual[idTexto] || textoFallback
 }
 
 document.addEventListener('DOMContentLoaded', function() {

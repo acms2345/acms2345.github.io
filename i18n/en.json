@@ -16,6 +16,7 @@
 
     "projects.viewOnGitHub": "View on GitHub", 
     "projects.download" : "Download it",
+    "projects.viewOnlineDemo" : "Test online demo",
 
     "projects.chess-in-c.title": "Chess in C ♙", 
     "projects.chess-in-c.description1": "Because of a school subject I worked on using the C language, I challenged myself to create a local, two-player chess game (no online matches), in terminal format.", 
@@ -53,7 +54,33 @@
     "contact.form.send": "Send", 
 
     "footer.copyright": "\u00A9 2026 Antonio Carlos. Source code licensed under MIT - Personal content: All rights reserved.", 
-    "footer.repository": "Repository"
+    "footer.repository": "Repository",
+
+    "geradorabntdemo.title" : "ABNT reference generator",
+    "geradorabntdemo.inputLink.placeholder" : "Insert the link to be cited here...",
+    "geradorabntdemo.loadingMessage" : " Please wait for the system to process...",
+    "geradorabntdemo.description.adviceForEN" : "Advice: As a tool made for Brazilian students and researchers, the results are generated in Portuguese and following Brazil's ABNT academic citation standard.",
+    "geradorabntdemo.description.adviceStillInDevelopment" : "Caution: the system is still in development. Please, verify the results before insert it in your academic researches.",
+    "geradorabntdemo.results.title" : "Results",
+    "geradorabntdemo.results.citationTitle" : "Citation",
+    "geradorabntdemo.results.referenceTitle" : "Reference",
+    "geradorabntdemo.results.copyButton" : "Copy!",
+    "geradorabntdemo.results.copiedButton" : "Copied!",
+
+    "geradorabntdemo.errorScreen.title" : "Error sending the link!",
+    "geradorabntdemo.errorScreen.errors.urlNotAllowed" : "The submitted URL is not authorized.",
+    "geradorabntdemo.errorScreen.errors.CitationGeneration" : "It was not possible to generate the citation.",
+    "geradorabntdemo.errorScreen.errors.contentTooLarge" : "The website content is too large.",
+    "geradorabntdemo.errorScreen.errors.tooManyRequests" : "Too many requests. Please wait a moment before sending the next one.",
+    "geradorabntdemo.errorScreen.errors.contentType" : "The file type on the site is invalid.",
+    "geradorabntdemo.errorScreen.errors.inacessibleSite": "There were problems accessing the requested website.",
+    "geradorabntdemo.errorScreen.errors.unexpectedError" : "An unexpected error occurred.",
+
+    "geradorabntdemo.report.somethingWrong?" : "Did something not go as it should have?",
+    "geradorabntdemo.report.whatsWrong?" : "What is wrong? (optional field)",
+    "geradorabntdemo.report.submitted" : "Report submitted! Thank you!"
+
+
 
 
 

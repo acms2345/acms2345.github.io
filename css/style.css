@@ -54,9 +54,10 @@ header {
     text-align: center;
 }
 
-header h1 {
+h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 header p {
@@ -495,4 +496,140 @@ footer a {
     width: 20px;
     height: 20px;
     object-fit: contain;
+}
+
+/*Para o GeradorABNT*/
+
+.sistema {
+    display: grid;
+    justify-content: center;
+}
+.sistema input {
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    color: var(--cor-texto-weak);
+    transition: transform 0.3s ease, opacity ease;
+    background: var(--background-color);
+    border: 1px solid var(--cor-texto-weak);
+    margin-bottom: 15px;
+}
+
+.sistema input::placeholder {
+    font-size: medium;
+}
+
+.sistema button {
+    border: none;
+    color: white;
+    background: var(--accent);
+    transition: background 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.sistema button:hover {
+    background: var(--accent-hover);
+}
+
+.loadingScreen {
+    justify-content: center;
+}
+
+.loadingAnimation {
+    text-align: center;    
+}
+.loadingAnimation span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: var(--cor-texto);
+    border-radius: 20px;
+    animation: loader 0.8s infinite alternate;
+}
+.loadingAnimation span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+.loadingAnimation span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+@keyframes loader {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+}
+.exibicaoErro {
+    display: flex;
+    justify-content: center;
+}
+.blocoExibicaoErro {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #EB876788;
+    border-radius: 8px;
+}
+
+.citacao {
+    align-items: stretch;
+    background: var(--cor-infoblocks);
+    border-left: 4px solid var(--azul);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.citacao button {
+    border: none;
+    color: white;
+    background: var(--accent);
+    transition: background 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.citacao button:hover {
+    background: var(--accent-hover);
+}
+
+#reportButton {
+    border: none;
+    color: white;
+    background: var(--accent);
+    transition: background 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#openReportButton {
+    color: var(--accent);
+}
+
+#reportButton:hover {
+    background: var(--accent-hover);
+    transition: transform 0.3s ease, opacity ease;
+    
+}
+
+#OptionalCommentInput {
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid var(--cor-texto-weak);
+    background: var(--background-color);
+    transition: transform 0.3s ease, opacity ease;
 }

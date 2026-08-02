@@ -15,7 +15,8 @@
     "projects.title": "Projetos",
 
     "projects.viewOnGitHub": "Veja no GitHub",
-    "projets.download" : "Faça o download",    
+    "projets.download" : "Faça o download",  
+    "projects.viewOnlineDemo" : "Testar demo online",  
 
     "projects.chess-in-c.title": "Xadrez em C ♙",
     "projects.chess-in-c.description1": "Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), no formato de terminal.",
@@ -52,7 +53,33 @@
     "contact.form.send": "Enviar",
 
     "footer.copyright": "\u00A9 2026 Antonio Carlos. Código-fonte sob licença MIT - conteúdos pessoais: todos os direitos reservados.",
-    "footer.repository": "Repositório"
+    "footer.repository": "Repositório",
+
+
+    "geradorabntdemo.title" : "Gerador de referências ABNT",
+    "geradorabntdemo.inputLink.placeholder" : "Insira aqui o link para ser citado...",
+    "geradorabntdemo.loadingMessage" : " Aguarde o processamento do sistema...",
+    "geradorabntdemo.description.adviceForEN" : " ",
+    "geradorabntdemo.description.adviceStillInDevelopment" : "Atenção: o sistema ainda está em desenvolvimento. Por favor, verifique os resultados antes de inseri-los em seus trabalhos acadêmicos.",
+    "geradorabntdemo.results.title" : "Resultados",
+    "geradorabntdemo.results.citationTitle" : "Citação",
+    "geradorabntdemo.results.referenceTitle" : "Referência",
+    "geradorabntdemo.results.copyButton" : "Copiar!",
+    "geradorabntdemo.results.copiedButton" : "Copiado!",
+
+    "geradorabntdemo.errorScreen.title" : "Erro ao enviar o link!",
+    "geradorabntdemo.errorScreen.errors.urlNotAllowed" : "A url enviada não é autorizada.",
+    "geradorabntdemo.errorScreen.errors.citationGeneration" : "Não foi possível gerar a citação.",
+    "geradorabntdemo.errorScreen.errors.contentTooLarge" : "O conteúdo do site é grande demais.",
+    "geradorabntdemo.errorScreen.errors.tooManyRequests" : "Muitas solicitações. Aguarde um pouco para enviar a próxima.",
+    "geradorabntdemo.errorScreen.errors.contentType" : "O tipo de arquivo presente no site é inválido.",
+    "geradorabntdemo.errorScreen.errors.inacessibleSite" : "Houve problemas ao acessar o site solicitado.",
+    "geradorabntdemo.errorScreen.errors.unexpectedError" : "Um erro não esperado ocorreu.",
+
+    "geradorabntdemo.report.somethingWrong?" : "Algo não saiu como deveria?",
+    "geradorabntdemo.report.reportHereButton" : "Reporte aqui para que possa ser consertado!",
+    "geradorabntdemo.report.whatsWrong?" : "O que há de errado? (campo opcional)",
+    "geradorabntdemo.report.submitted" : "Reporte enviado! Agradeço!"
 
     
     
