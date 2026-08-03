@@ -59,6 +59,7 @@
     "geradorabntdemo.title" : "ABNT reference generator",
     "geradorabntdemo.inputLink.placeholder" : "Insert the link to be cited here...",
     "geradorabntdemo.loadingMessage" : " Please wait for the system to process...",
+    "geradorabntdemo.loadingMessageDelay" : "(Note: the first request may take longer – about 30 seconds)",
     "geradorabntdemo.description.adviceForEN" : "Advice: As a tool made for Brazilian students and researchers, the results are generated in Portuguese and following Brazil's ABNT academic citation standard.",
     "geradorabntdemo.description.adviceStillInDevelopment" : "Caution: the system is still in development. Please, verify the results before insert it in your academic researches.",
     "geradorabntdemo.results.title" : "Results",
@@ -79,9 +80,17 @@
     "geradorabntdemo.report.somethingWrong?" : "Did something not go as it should have?",
     "geradorabntdemo.report.reportHereButton" : "Report it here so it can be fixed!",
     "geradorabntdemo.report.whatsWrong?" : "What is wrong? (optional field)",
-    "geradorabntdemo.report.submitted" : "Report submitted! Thank you!"
+    "geradorabntdemo.report.submitted" : "Report submitted! Thank you!",
 
+    "geradorabntdemo.about.howItWorks": "This system works like this: the URL sent is processed (and is not stored), the site's metadata is extracted, and then formatted in the ABNT model.",
+    "geradorabntdemo.about.knownLimitations.title" : "Known limitations",
+    "geradorabntdemo.about.knownLimitations.badMetadata" : "Since it works based on metadata structured by website creators, some simpler or poorly structured pages may present errors or fail.", 
+    "geradorabntdemo.about.knownLimitations.blocksOfBots" : "Some sites block bots from entering for security reasons. Therefore, they cannot be accessed by this system.", 
+    "geradorabntdemo.about.knownLimitations.contentAndSize" : "There are limits on the content and size of the site: only HTML is accepted. Links to videos and PDFs cannot be read by the system and will fail if placed; and a very large site may not be read correctly.", 
+    "geradorabntdemo.about.knownLimitations.isolatedQueries" : "Each link query is isolated. That is, it is not possible to send more than one link at a time or assemble a single bibliography with multiple links.",
 
+    "geradorabntdemo.about.demoRepoButton" : "See demo code", 
+    "geradorabntdemo.about.sourceRepoButton" : "See Generator source code"
 
 
 

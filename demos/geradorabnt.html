@@ -40,6 +40,7 @@
             <span></span>
         </div>
         <p data-i18n="geradorabntdemo.loadingMessage"> Aguarde o processamento do sistema...</p>
+        <p data-i18n="geradorabntdemo.loadingMessageDelay" id="delayMessage">(Obs.: a primeira solicitação pode demorar mais - cerca de 30 segundos)</p>
     </section>
 
     <section class="resultadosCitacao" style="display: none;">
@@ -84,10 +85,38 @@
     </section>
 
     <section class="sobreOProjeto">
-
+        <h2 data-i18n="nav.about">Sobre o projeto</h2>
+        <div class="sobre-conteudo">
+            <p data-i18n="geradorabntdemo.about.howItWorks">O presente sistema funciona assim: a URL enviada é processada (e não é armazenada),
+                os metadados do site são extraídos, e depois são formatados no modelo da ABNT.
+            </p>
+        </div>
+        <div class="sobre-conteudo">
+            <b data-i18n="geradorabntdemo.about.knownLimitations.title">Limitações conhecidas</b>
+            <ol>
+                <li data-i18n="geradorabntdemo.about.knownLimitations.badMetadata">Já que funciona pelos metadados estruturados pelos criadores dos sites,
+                    algumas páginas mais simples ou mal estruturadas podem apresentar erros ou falharem.
+                </li>
+                <li data-i18n="geradorabntdemo.about.knownLimitations.blocksOfBots">Alguns sites bloqueam a entrada de bots por questões de segurança. 
+                    Então, esses não podem ser acessados por esse sistema.
+                </li>
+                <li data-i18n="geradorabntdemo.about.knownLimitations.contentAndSize">Existem limites quanto ao conteúdo e tamanho do site: 
+                    apenas HTML é aceito. Links de vídeos e PDFs não podem ser lidos pelo sistema 
+                    e falharão caso forem colocados; e um site muito grande pode não ser lido corretamente.
+                </li>
+                <li data-i18n="geradorabntdemo.about.knownLimitations.isolatedQueries">Cada consulta de link é isolada. Ou seja, não é possível enviar mais de um link por vez
+                    ou montar uma única bibliografia com vários links.
+                </li>
+            </ol>
+        </div>
+        <div class="botoes_projeto">
+            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-i18n="geradorabntdemo.about.sourceRepoButton">Veja no GitHub</a>
+            <a href="https://github.com/acms2345/GeradorABNTPy-Demo" class="btn-projeto" data-i18n="geradorabntdemo.about.demoRepoButton">Veja no GitHub</a>
+        </div>
     </section>
 
     <footer>
+        <b>acms.me</b>
         <p data-i18n="footer.copyright">&copy; 2026 Antonio Carlos. Código-fonte sob licença MIT - Conteúdo pessoal: Todos os direitos reservados.</p>
         <p class="build-info">
             <i class="fas fa-code-branch"></i>

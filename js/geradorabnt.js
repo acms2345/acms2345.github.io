@@ -104,6 +104,7 @@ botaoEnvioLink.addEventListener('click', async function(){
         citacaoRefTexto.textContent = citacaoRef
 
         resultadosCitacao.style.display = 'grid'
+        resultadosCitacao.scrollIntoView({behavior: 'smooth'})
 
 
     }

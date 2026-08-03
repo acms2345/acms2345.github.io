@@ -59,6 +59,7 @@
     "geradorabntdemo.title" : "Gerador de referências ABNT",
     "geradorabntdemo.inputLink.placeholder" : "Insira aqui o link para ser citado...",
     "geradorabntdemo.loadingMessage" : " Aguarde o processamento do sistema...",
+    "geradorabntdemo.loadingMessageDelay" : "(Obs.: a primeira solicitação pode demorar mais - cerca de 30 segundos)",
     "geradorabntdemo.description.adviceForEN" : " ",
     "geradorabntdemo.description.adviceStillInDevelopment" : "Atenção: o sistema ainda está em desenvolvimento. Por favor, verifique os resultados antes de inseri-los em seus trabalhos acadêmicos.",
     "geradorabntdemo.results.title" : "Resultados",
@@ -79,7 +80,17 @@
     "geradorabntdemo.report.somethingWrong?" : "Algo não saiu como deveria?",
     "geradorabntdemo.report.reportHereButton" : "Reporte aqui para que possa ser consertado!",
     "geradorabntdemo.report.whatsWrong?" : "O que há de errado? (campo opcional)",
-    "geradorabntdemo.report.submitted" : "Reporte enviado! Agradeço!"
+    "geradorabntdemo.report.submitted" : "Reporte enviado! Agradeço!",
+
+    "geradorabntdemo.about.howItWorks" : "O presente sistema funciona assim: a URL enviada é processada (e não é armazenada), os metadados do site são extraídos, e depois são formatados no modelo da ABNT.",
+    "geradorabntdemo.about.knownLimitations.title" : "Limitações conhecidas",
+    "geradorabntdemo.about.knownLimitations.badMetadata" : "Já que funciona pelos metadados estruturados pelos criadores dos sites, algumas páginas mais simples ou mal estruturadas podem apresentar erros ou falharem.",
+    "geradorabntdemo.about.knownLimitations.blocksOfBots" : "Alguns sites bloqueam a entrada de bots por questões de segurança. Então, esses não podem ser acessados por esse sistema.",
+    "geradorabntdemo.about.knownLimitations.contentAndSize" : "Existem limites quanto ao conteúdo e tamanho do site: apenas HTML é aceito. Links de vídeos e PDFs não podem ser lidos pelo sistema e falharão caso forem colocados; e um site muito grande pode não ser lido corretamente.",
+    "geradorabntdemo.about.knownLimitations.isolatedQueries" : "Cada consulta de link é isolada. Ou seja, não é possível enviar mais de um link por vez ou montar uma única bibliografia com vários links.",
+
+    "geradorabntdemo.about.demoRepoButton" : "Ver código da demo",
+    "geradorabntdemo.about.sourceRepoButton" : "Ver código-fonte do Gerador"
 
     
     
