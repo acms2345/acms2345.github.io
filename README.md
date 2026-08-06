@@ -58,7 +58,7 @@ Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345
 Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradorabnt)
 
 
-## Portfolio Resources 📋
+## Portfolio Resources
 
 - Responsive design;
 
@@ -74,7 +74,7 @@ Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradora
 
 - Demo for my "GeradorABNT" project.
 
-## Tools used ⚙️
+## Tools used
 
 - HTML;
 
@@ -90,7 +90,7 @@ Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradora
 
 - For the "GeradorABNT" demo: Render and FastAPI.
 
-## Contact 👤
+## Contact
 
 - Github Profile: [acms2345](https://github.com/acms2345)
 - Contact: [acms2345.github.io/#contato](https://acms2345.github.io/#contato)
@@ -149,7 +149,7 @@ Link da demo: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/gerad
 
 
 
-## Recursos do portfólio 📋
+## Recursos do portfólio
 
 - Design com responsividade (adaptações para diferentes dispositivos);
 - Menu hamburger para mobile;
@@ -160,7 +160,7 @@ Link da demo: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/gerad
 - Demo do projeto "GeradorABNT";
 - Versionamento por meio dos commits do repositório.
 
-##  Ferramentas usadas ⚙️
+##  Ferramentas usadas
 
 - HTML;
 - CSS;
@@ -170,7 +170,7 @@ Link da demo: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/gerad
 - Hackatime para a coleta e exibição das estatísticas.
 - Para a demo do "GeradorABNT": Render e FastAPI.
 
-## Contato 👤
+## Contato
 
 - Perfil do Github: [acms2345](https://github.com/acms2345)
 - Contato: [acms2345.github.io/#contato](https://acms2345.github.io/#contato)
