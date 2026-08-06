@@ -12,7 +12,7 @@ This website is a personal portfolio. It was created with the objective of:
 
 - Testing my website creation skills;
 
-- Showcasing some of my skills;
+- Showcasing some of my skills in programs;
 
 - Providing the possibility of more direct contact.
 
@@ -48,6 +48,7 @@ Link to download the game: [github.com/acms2345/Xadrez-em-C/releases](https://gi
 Python algorithm (still under development) for automated citation and bibliography collections, in the Brasilian Association of Technical Standards (ABNT) citation model.
 
 Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
+Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradorabnt)
 
 
 ## Portfolio Resources 📋
@@ -62,7 +63,9 @@ Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345
 
 - Translation via i18n (PT/EN);
 
-- Hackatime badges.
+- Hackatime badges;
+
+- Demo for my "GeradorABNT" project.
 
 ## Tools used ⚙️
 
@@ -76,7 +79,9 @@ Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345
 
 - Formspree and reCAPTCHA for the contact form;
 
-- Hackatime for collecting and displaying statistics.
+- Hackatime for collecting and displaying statistics;
+
+- For the "GeradorABNT" demo: Render.
 
 ## Contact 👤
 
@@ -87,31 +92,35 @@ Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345
 
 The source code (not the personal content) is under MIT license. Read `LICENSE` file for further details.
 
+
+
 # Versão em português
 
-## "Do que se trata?"
+## Sobre o site
 
-Esse site é um portfólio pessoal. Ele foi criado com o objetivo de:
-- Testar minhas habilidades na criação de sites;
-- Mostrar um pouco das munhas habilidades;
-- Dar a possibilidade de entrar em contato mais diretamente.
+Esse site é um portfólio pessoal. Basicamente, ele foi criado com o objetivo de:
+- Testar minhas habilidades na criação de sites, e na programação em si;
+- Dar a possibilidade de entrar em contato comigo;
+- E mostrar algumas das minhas habilidades.
+
 Feito com HTML, CSS, JavaScript e sistema i18next para internacionalização.
 
 
-## "Como usar o site?"
+## "Como usá-lo?"
 
 [Link para o site aqui.](https://acms.me)
 
-### "Como clonar o repositório?"
+### Tutorial para clonar o repositório (via Git)
 
-1. Abra o terminal ou prompt de comando.
-2. Navegue até o diretório onde deseja clonar o repositório usando o comando `cd` (exemplo: `cd Documents/Projects`).
-3. Use o comando `git clone` seguido do URL do repositório para cloná-lo (ou você pode simplesmente baixar o arquivo ZIP do GitHub e extraí-lo):
-```bash 
+> Caso prefira, você também pode simplesmente baixar o repositório via Github, indo em Code → Download ZIP. Mas a preferência é sua.
+
+1. Vá ao prompt de comando / terminal, e use o git para clonar o repositório com o seguinte comando:
+
+```bash
 git clone https://github.com/acms2345/acms2345.github.io.git
 ```
-4. Abra o diretório clonado usando o comando `cd` (exemplo: `cd acms2345.github.io`).
-5. Agora você pode abrir o arquivo `index.html` em um navegador para visualizar o site localmente.
+
+2. Agora, você pode ir na pasta em que o reposítório foi baixado e simplesmente entrar no `index.html` ou `geradorabnt.html`.
 
 ## Projetos exibidos
 
@@ -128,15 +137,20 @@ Algoritmo em Python (ainda em desenvolvimento) para coletar citações e referê
 
 Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
 
+Link da demo: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradorabnt)
+
+
 
 ## Recursos do portfólio 📋
 
-- Design responsivo;
+- Design com responsividade (adaptações para diferentes dispositivos);
 - Menu hamburger para mobile;
-- Formulário para contato;
+- Formulário para entrar em contato;
 - Estilos claro e escuro de layout;
 - Tradução via i18n;
-- Estatísticas do Hackatime.
+- Estatísticas do Hackatime, para exibição de tempo passado nos projetos;
+- Demo do projeto "GeradorABNT";
+- Versionamento por meio dos commits do repositório.
 
 ##  Ferramentas usadas ⚙️
 
@@ -146,6 +160,7 @@ Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acm
 - Para fontes e imagens: Google Fonts;
 - Formspree e reCAPTCHA para o formulário de contato;
 - Hackatime para a coleta e exibição das estatísticas.
+- Para a demo do "GeradorABNT": Render e FastAPI.
 
 ## Contato 👤
 
@@ -154,5 +169,5 @@ Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acm
 
 ## Licença 
 
-O código-fonte desse repositório (não o conteúdo pessoal) está sob a licença MIT. Para mais detalhes, consulte o arquivo `LICENSE`.
+O código-fonte desse repositório (não o conteúdo pessoal) está sob a licença MIT. Para mais detalhes, confira o arquivo `LICENSE`.
 
