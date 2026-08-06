@@ -4,40 +4,46 @@
 
 [Versão em português abaixo / Portuguese version below](#Versão-em-português)
 
+---
+
 # English version
+
+> **Advice:** as a made-in-hand README made for someone that does not know so much about English, the text below can have some syntax and typing mistakes.
 
 ## "What is it about?"
 
-This website is a personal portfolio. It was created with the objective of:
+This website is a personal portfolio. It was created with the objectives of:
 
-- Testing my website creation skills;
+- Testing my own ability to create sites and online systems as a whole;
 
-- Showcasing some of my skills in programs;
+- Showcasing some of my skills;
 
-- Providing the possibility of more direct contact.
+- And providing the possibility of direct contact to me.
 
-Made with HTML, CSS, JavaScript and the i18next system for internationalization.
+Made with HTML, CSS and JavaScript. Used i18next system for internationalization.
 
 ## "Where to view it?"
 
 [Link to the website here.](https://acms.me)
 
-### "How to clone the repository?"
+### "How to clone the repository?" (Using Git)
 
-1. Open the terminal or command prompt.
-2. Navigate to the directory where you want to clone the repository using the `cd` command (example: `cd Documents/Projects`).
-3. Use the `git clone` command followed by the URL of the repository to clone it (or you just download the ZIP file from GitHub and extract it):
+> If you think it is easier, you can just download the repo ZIP via Github (in Code → Download ZIP).
+
+1. Open the terminal or command prompt, and then use Git to clone the repo using the following comand:
+
 ```bash
 git clone https://github.com/acms2345/acms2345.github.io.git
+
 ```
-4. Open the cloned directory using the `cd` command (example: `cd acms2345.github.io`).
-5. Now you can open the `index.html` file in a browser to view the site locally.
+2. Open the folder where the repo were downloaded, and open the `index.html` or `geradorabnt.html` files to test it.
+
 
 ## Projects displayed
 
 ### Chess in C ♙
 
-This is a chess game for two players (locally, i.e., without an online multiplayer system).
+This is a chess game for two players (locally, without an online multiplayer system), in Command Line Interface format.
 
 Repository link: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
 
@@ -45,9 +51,10 @@ Link to download the game: [github.com/acms2345/Xadrez-em-C/releases](https://gi
 
 ### GeradorABNTPy 📄
 
-Python algorithm (still under development) for automated citation and bibliography collections, in the Brasilian Association of Technical Standards (ABNT) citation model.
+Python algorithm (still under development) for automated academic citation and bibliography creations, in the Brasilian Association of Technical Standards (ABNT) citation format.
 
 Repository link: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
+
 Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradorabnt)
 
 
@@ -81,7 +88,7 @@ Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradora
 
 - Hackatime for collecting and displaying statistics;
 
-- For the "GeradorABNT" demo: Render.
+- For the "GeradorABNT" demo: Render and FastAPI.
 
 ## Contact 👤
 
@@ -92,7 +99,7 @@ Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradora
 
 The source code (not the personal content) is under MIT license. Read `LICENSE` file for further details.
 
-
+---
 
 # Versão em português
 
@@ -103,7 +110,7 @@ Esse site é um portfólio pessoal. Basicamente, ele foi criado com o objetivo d
 - Dar a possibilidade de entrar em contato comigo;
 - E mostrar algumas das minhas habilidades.
 
-Feito com HTML, CSS, JavaScript e sistema i18next para internacionalização.
+Feito com HTML, CSS e JavaScript. Uso do sistema i18next para internacionalização.
 
 
 ## "Como usá-lo?"
@@ -129,11 +136,12 @@ git clone https://github.com/acms2345/acms2345.github.io.git
 Este é um jogo de xadrez para dois jogadores de forma local (ou seja, sem sistema de multiplayer online) no estilo de terminal.
 
 Link do repositório: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/Xadrez-em-C).
+
 Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases).
 
 ### GeradorABNTPy 📄
 
-Algoritmo em Python (ainda em desenvolvimento) para coletar citações e referências bibliográficas automaticamente de site, no modelo da Associação Brasileira de Normas Técnicas (ABNT).
+Algoritmo em Python (ainda em desenvolvimento) para coletar citações e referências bibliográficas automaticamente de sites, no modelo da Associação Brasileira de Normas Técnicas (ABNT).
 
 Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
 
