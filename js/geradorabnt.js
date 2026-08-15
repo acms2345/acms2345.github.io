@@ -100,8 +100,8 @@ botaoEnvioLink.addEventListener('click', async function(){
         const citacaoInLine = resultados.citacaoInLine
         const citacaoRef = resultados.citacaoRef
 
-        citacaoInLineTexto.textContent = citacaoInLine
-        citacaoRefTexto.textContent = citacaoRef
+        citacaoInLineTexto.innerHTML = citacaoInLine
+        citacaoRefTexto.innerHTML = citacaoRef
 
         resultadosCitacao.style.display = 'grid'
         resultadosCitacao.scrollIntoView({behavior: 'smooth'})
@@ -130,12 +130,23 @@ botaoEnvioLink.addEventListener('click', async function(){
 })
 
 function copiarTexto(botao, classTexto){
-    const textoACopiar = document.querySelector(classTexto).textContent
+    const classTextoACopiar = document.querySelector(classTexto)
+
+    const textoHTMLACopiar = classTextoACopiar.innerHTML
+    const textoPlainACopiar = classTextoACopiar.textContent
 
     const spanTextoBotao = botao.querySelector('.textoBotaoCopiar')
     const textoOriginalBotao = spanTextoBotao.textContent
 
-    navigator.clipboard.writeText(textoACopiar).then(() => {
+    blobHTML = new Blob([textoHTMLACopiar], { type: "text/html" })
+    blobPlain = new Blob([textoPlainACopiar], { type: "text/plain" })
+    
+    const clipboardData = new ClipboardItem({
+        "text/html" : blobHTML,
+        "text/plain" : blobPlain
+    })
+
+    navigator.clipboard.write([clipboardData]).then(() => {
         spanTextoBotao.textContent = traduzirManualmente("geradorabntdemo.results.copiedButton","Copiado!")
 
         setTimeout(() => {

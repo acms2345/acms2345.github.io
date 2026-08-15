@@ -2,13 +2,11 @@
 
 ![Site screenshot (black theme)](assets/black-theme_screenshot.png)
 
-[Versão em português abaixo / Portuguese version below](#Versão-em-português)
+[A versão em português abaixo / Portuguese version below](#Versão-em-português)
 
 ---
 
 # English version
-
-> **Advice:** as a made-in-hand README made for someone that does not know so much about English, the text below can have some syntax and typing mistakes.
 
 ## "What is it about?"
 
@@ -20,7 +18,7 @@ This website is a personal portfolio. It was created with the objectives of:
 
 - And providing the possibility of direct contact to me.
 
-Made with HTML, CSS and JavaScript. Used i18next system for internationalization.
+It was made with HTML, CSS and JavaScript. Used i18next system for internationalization.
 
 ## "Where to view it?"
 
@@ -106,6 +104,7 @@ The source code (not the personal content) is under MIT license. Read `LICENSE` 
 ## Sobre o site
 
 Esse site é um portfólio pessoal. Basicamente, ele foi criado com o objetivo de:
+
 - Testar minhas habilidades na criação de sites, e na programação em si;
 - Dar a possibilidade de entrar em contato comigo;
 - E mostrar algumas das minhas habilidades.
@@ -141,7 +140,7 @@ Link para baixar o jogo: [github.com/acms2345/Xadrez-em-C/releases](https://gith
 
 ### GeradorABNTPy 📄
 
-Algoritmo em Python (ainda em desenvolvimento) para coletar citações e referências bibliográficas automaticamente de sites, no modelo da Associação Brasileira de Normas Técnicas (ABNT).
+Algoritmo em Python (ainda em desenvolvimento) para montar citações e referências bibliográficas automaticamente de sites, no modelo da Associação Brasileira de Normas Técnicas (ABNT).
 
 Link do repositório: [github.com/acms2345/GeradorABNTPy](https://github.com/acms2345/GeradorABNTPy).
 
