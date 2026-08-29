@@ -23,14 +23,14 @@
         </button>
     </nav>
 
-    <h1 data-i18n="geradorabntdemo.title">Gerador de referências ABNT</h1>
+    <h1 data-translation="geradorabntdemo.title">Gerador de referências ABNT</h1>
 
     <section class="sistema">
-        <input type="url" placeholder="Insira aqui o link para ser citado..." data-i18n-attr="placeholder:geradorabntdemo.inputLink.placeholder" class="inputLink">
-        <button class="botaoEnvioLink" disabled style="cursor: not-allowed;" data-i18n="contact.form.send">Enviar</button>
-        <p data-i18n="geradorabntdemo.description.adviceStillInDevelopment">Atenção: o sistema ainda está em desenvolvimento. 
+        <input type="url" placeholder="Insira aqui o link para ser citado..." data-translation-attr="placeholder:geradorabntdemo.inputLink.placeholder" class="inputLink">
+        <button class="botaoEnvioLink" disabled style="cursor: not-allowed;" data-translation="contact.form.send">Enviar</button>
+        <p data-translation="geradorabntdemo.description.adviceStillInDevelopment">Atenção: o sistema ainda está em desenvolvimento. 
             Por favor, verifique os resultados antes de inseri-los em seus trabalhos acadêmicos.</p>
-        <p data-i18n="geradorabntdemo.description.adviceForEN"></p>
+        <p data-translation="geradorabntdemo.description.adviceForEN"></p>
     </section>
 
     <section class="loadingScreen" style="display: none;">
@@ -39,38 +39,38 @@
             <span></span>
             <span></span>
         </div>
-        <p data-i18n="geradorabntdemo.loadingMessage"> Aguarde o processamento do sistema...</p>
-        <p data-i18n="geradorabntdemo.loadingMessageDelay" id="delayMessage">(Obs.: a primeira solicitação pode demorar mais - cerca de 30 segundos)</p>
+        <p data-translation="geradorabntdemo.loadingMessage"> Aguarde o processamento do sistema...</p>
+        <p data-translation="geradorabntdemo.loadingMessageDelay" id="delayMessage">(Obs.: a primeira solicitação pode demorar mais - cerca de 30 segundos)</p>
     </section>
 
     <section class="resultadosCitacao" style="display: none;">
-        <h3 data-i18n="geradorabntdemo.results.title">Resultados</h3>
+        <h3 data-translation="geradorabntdemo.results.title">Resultados</h3>
         <div class="citacao">
-            <h4 data-i18n="geradorabntdemo.results.citationTitle">Citação</h4>
+            <h4 data-translation="geradorabntdemo.results.citationTitle">Citação</h4>
             <p class="citacaoInLineTexto"></p>
             <button onclick="copiarTexto(this, '.citacaoInLineTexto')">
                 <i class="fa-regular fa-copy"></i>
-                <span class="textoBotaoCopiar" data-i18n="geradorabntdemo.results.copyButton">Copiar!</span>
+                <span class="textoBotaoCopiar" data-translation="geradorabntdemo.results.copyButton">Copiar!</span>
             </button>
         </div>
         <div class="citacao">
-            <h4 data-i18n="geradorabntdemo.results.referenceTitle">Referência</h4>
+            <h4 data-translation="geradorabntdemo.results.referenceTitle">Referência</h4>
             <p class="citacaoRefTexto"></p>
             <button onclick="copiarTexto(this, '.citacaoRefTexto')">
                 <i class="fa-regular fa-copy"></i>
-                <span class="textoBotaoCopiar" data-i18n="geradorabntdemo.results.copyButton">Copiar!</span>
+                <span class="textoBotaoCopiar" data-translation="geradorabntdemo.results.copyButton">Copiar!</span>
             </button>
         </div>
         <div id="report">
-            <p data-i18n="geradorabntdemo.report.somethingWrong?">Algo não saiu como deveria?</p>
-            <a id="openReportButton" style="cursor: pointer;" data-i18n="geradorabntdemo.report.reportHereButton">Reporte aqui para que possa ser consertado!</a>
+            <p data-translation="geradorabntdemo.report.somethingWrong?">Algo não saiu como deveria?</p>
+            <a id="openReportButton" style="cursor: pointer;" data-translation="geradorabntdemo.report.reportHereButton">Reporte aqui para que possa ser consertado!</a>
             <div id="formReport" style="display: none;">
                 <label>
-                    <span data-i18n="geradorabntdemo.report.whatsWrong?"></span>
+                    <span data-translation="geradorabntdemo.report.whatsWrong?"></span>
                     <textarea id="OptionalCommentInput"></textarea>
                 </label>
                 
-                <button id="reportButton" onclick="enviarReporte(document.getElementById('OptionalCommentInput').value.trim())" data-i18n="contact.form.send">Enviar!</button>
+                <button id="reportButton" onclick="enviarReporte(document.getElementById('OptionalCommentInput').value.trim())" data-translation="contact.form.send">Enviar!</button>
             </div>
         </div>
 
@@ -78,46 +78,46 @@
 
     <section class="exibicaoErro" style="display: none;">
         <div class="blocoExibicaoErro">
-            <p><b data-i18n="geradorabntdemo.errorScreen.title">Erro ao enviar o link!</b></p>
+            <p><b data-translation="geradorabntdemo.errorScreen.title">Erro ao enviar o link!</b></p>
             <p class="erroTexto"></p>
             
         </div>
     </section>
 
     <section class="sobreOProjeto">
-        <h2 data-i18n="nav.about">Sobre o projeto</h2>
+        <h2 data-translation="nav.about">Sobre o projeto</h2>
         <div class="sobre-conteudo">
-            <p data-i18n="geradorabntdemo.about.howItWorks">O presente sistema funciona assim: a URL enviada é processada (e não é armazenada),
+            <p data-translation="geradorabntdemo.about.howItWorks">O presente sistema funciona assim: a URL enviada é processada (e não é armazenada),
                 os metadados do site são extraídos, e depois são formatados no modelo da ABNT.
             </p>
         </div>
         <div class="sobre-conteudo">
-            <b data-i18n="geradorabntdemo.about.knownLimitations.title">Limitações conhecidas</b>
+            <b data-translation="geradorabntdemo.about.knownLimitations.title">Limitações conhecidas</b>
             <ol>
-                <li data-i18n="geradorabntdemo.about.knownLimitations.badMetadata">Já que funciona pelos metadados estruturados pelos criadores dos sites,
+                <li data-translation="geradorabntdemo.about.knownLimitations.badMetadata">Já que funciona pelos metadados estruturados pelos criadores dos sites,
                     algumas páginas mais simples ou mal estruturadas podem apresentar erros ou falharem.
                 </li>
-                <li data-i18n="geradorabntdemo.about.knownLimitations.blocksOfBots">Alguns sites bloqueam a entrada de bots por questões de segurança. 
+                <li data-translation="geradorabntdemo.about.knownLimitations.blocksOfBots">Alguns sites bloqueam a entrada de bots por questões de segurança. 
                     Então, esses não podem ser acessados por esse sistema.
                 </li>
-                <li data-i18n="geradorabntdemo.about.knownLimitations.contentAndSize">Existem limites quanto ao conteúdo e tamanho do site: 
+                <li data-translation="geradorabntdemo.about.knownLimitations.contentAndSize">Existem limites quanto ao conteúdo e tamanho do site: 
                     apenas HTML é aceito. Links de vídeos e PDFs não podem ser lidos pelo sistema 
                     e falharão caso forem colocados; e um site muito grande pode não ser lido corretamente.
                 </li>
-                <li data-i18n="geradorabntdemo.about.knownLimitations.isolatedQueries">Cada consulta de link é isolada. Ou seja, não é possível enviar mais de um link por vez
+                <li data-translation="geradorabntdemo.about.knownLimitations.isolatedQueries">Cada consulta de link é isolada. Ou seja, não é possível enviar mais de um link por vez
                     ou montar uma única bibliografia com vários links.
                 </li>
             </ol>
         </div>
         <div class="botoes_projeto">
-            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-i18n="geradorabntdemo.about.sourceRepoButton">Veja no GitHub</a>
-            <a href="https://github.com/acms2345/GeradorABNTPy-Demo" class="btn-projeto" data-i18n="geradorabntdemo.about.demoRepoButton">Veja no GitHub</a>
+            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-translation="geradorabntdemo.about.sourceRepoButton">Veja no GitHub</a>
+            <a href="https://github.com/acms2345/GeradorABNTPy-Demo" class="btn-projeto" data-translation="geradorabntdemo.about.demoRepoButton">Veja no GitHub</a>
         </div>
     </section>
 
     <footer>
-        <b>acms.me</b>
-        <p data-i18n="footer.copyright">&copy; 2026 Antonio Carlos. Código-fonte sob licença MIT - Conteúdo pessoal: Todos os direitos reservados.</p>
+        <a href="https://acms.me">acms.me</a>
+        <p data-translation="footer.copyright">&copy; 2026 Antonio Carlos. Código-fonte sob licença MIT - Conteúdo pessoal: Todos os direitos reservados.</p>
         <p class="build-info">
             <i class="fas fa-code-branch"></i>
             <a href="COMMIT_URL" target="_blank" rel="noopener noreferrer" class="commitURL">
@@ -126,7 +126,7 @@
         </p>
         <button class="botao_repositorio">
             <img src="../assets/github_logo.svg" alt="GitHub" style="filter: brightness(0) invert(1);">
-            <span data-i18n="footer.repository">Repositório</span>
+            <span data-translation="footer.repository">Repositório</span>
         </button>
     </footer>
     <script src="../js/script.js"></script>

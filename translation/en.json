@@ -70,7 +70,7 @@
 
     "geradorabntdemo.errorScreen.title" : "Error sending the link!",
     "geradorabntdemo.errorScreen.errors.urlNotAllowed" : "The submitted URL is not authorized.",
-    "geradorabntdemo.errorScreen.errors.CitationGeneration" : "It was not possible to generate the citation.",
+    "geradorabntdemo.errorScreen.errors.citationGeneration" : "It was not possible to generate the citation.",
     "geradorabntdemo.errorScreen.errors.contentTooLarge" : "The website content is too large.",
     "geradorabntdemo.errorScreen.errors.tooManyRequests" : "Too many requests. Please wait a moment before sending the next one.",
     "geradorabntdemo.errorScreen.errors.contentType" : "The file type on the site is invalid.",

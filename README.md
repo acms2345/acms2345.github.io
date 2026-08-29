@@ -18,7 +18,7 @@ This website is a personal portfolio. It was created with the objectives of:
 
 - And providing the possibility of direct contact to me.
 
-It was made with HTML, CSS and JavaScript. Used i18next system for internationalization.
+It was made with HTML, CSS and JavaScript. Used own JS+JSON system for translation.
 
 ## "Where to view it?"
 
@@ -66,7 +66,7 @@ Demo link: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/geradora
 
 - Black and white themes;
 
-- Translation via i18n (PT/EN);
+- Translation system via 'data-translation' attributes and JSON files data collects.
 
 - Hackatime badges;
 
@@ -109,7 +109,7 @@ Esse site é um portfólio pessoal. Basicamente, ele foi criado com o objetivo d
 - Dar a possibilidade de entrar em contato comigo;
 - E mostrar algumas das minhas habilidades.
 
-Feito com HTML, CSS e JavaScript. Uso do sistema i18next para internacionalização.
+Feito com HTML, CSS e JavaScript. Uso de um sistema próprio (usando arquivos JSON e atributos `data-translation`) para tradução.
 
 
 ## "Como usá-lo?"
@@ -154,7 +154,7 @@ Link da demo: [acms.me/demos/geradorabnt](https://acms2345.github.io/demos/gerad
 - Menu hamburger para mobile;
 - Formulário para entrar em contato;
 - Estilos claro e escuro de layout;
-- Tradução via i18n;
+- Sistema de tradução (PT/EN) via atributos `data-translation` e coleta de dados de arquivos JSON.
 - Estatísticas do Hackatime, para exibição de tempo passado nos projetos;
 - Demo do projeto "GeradorABNT";
 - Versionamento por meio dos commits do repositório.

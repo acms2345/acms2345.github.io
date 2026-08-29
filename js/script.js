@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-botaoRepositorio = document.querySelector('.botao_repositorio')
+const botaoRepositorio = document.querySelector('.botao_repositorio')
 
 if (botaoRepositorio){
     document.querySelector('.botao_repositorio').addEventListener('click', function() {
@@ -44,7 +44,7 @@ if (botaoRepositorio){
 }
 
 
-botaoEmail = document.querySelector('.botaoEmail')
+const botaoEmail = document.querySelector('.botaoEmail')
 
 if (botaoEmail){
     botaoEmail.addEventListener('click', function() {
@@ -52,7 +52,7 @@ if (botaoEmail){
     });
 }
 
-botaoPerfilGithub = document.querySelector('.botao_perfilGithub')
+const botaoPerfilGithub = document.querySelector('.botao_perfilGithub')
 
 if (botaoPerfilGithub){
     botaoPerfilGithub.addEventListener('click', function() {
@@ -115,24 +115,24 @@ let dicionarioAtual = {};
 
 async function setLanguage(linguagem) {
     try {
-        const resposta = await fetch(resolveAsset(`i18n/${linguagem}.json`), {cache: 'no-store'});
+        const resposta = await fetch(resolveAsset(`translation/${linguagem}.json`), {cache: 'no-store'});
         //Coleta os dados do JSON
         if (!resposta.ok) return;
         //Se não conseguir coletar os dados, encerra a função.
         const dicio = await resposta.json();
         dicionarioAtual = dicio
 
-        // Aplicar em elementos com data-i18n (texto)
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.dataset.i18n;
+        // Aplicar em elementos com o atributo 'data-translation'
+        document.querySelectorAll('[data-translation]').forEach(el => {
+            const key = el.dataset.translation;
             if (dicio[key]) {
                 el.textContent = dicio[key];
             }
         });
 
-        // Aplicar em elementos com data-i18n-attr (atributos)
-        document.querySelectorAll('[data-i18n-attr]').forEach(el => {
-            const [attrName, key] = el.dataset.i18nAttr.split(':');
+        // Aplicar em elementos com data-translation-attr (atributos)
+        document.querySelectorAll('[data-translation-attr]').forEach(el => {
+            const [attrName, key] = el.dataset.translationAttr.split(':');
             if (dicio[key]) {
                 el.setAttribute(attrName, dicio[key]);
             }
@@ -211,7 +211,7 @@ themeChangeButton.addEventListener('click', function() {
             img_Hackatime_stats.src = img_Hackatime_statslinkLight
         }
         
-        localStorage.setItem('theme') = 'light'
+        localStorage.setItem('theme', 'light')
     } else {
         HTMLbody.classList.add('darkmode')
         
@@ -221,7 +221,7 @@ themeChangeButton.addEventListener('click', function() {
             img_Hackatime_stats.src = img_Hackatime_statslinkDark
         }
 
-        localStorage.setItem('theme') = 'dark'
+        localStorage.setItem('theme', 'dark')
     }
 })
 

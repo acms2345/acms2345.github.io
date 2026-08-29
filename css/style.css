@@ -109,7 +109,7 @@ h2, h3 {
     appearance: unset;
 }
 
-.theme-change_button :hover {
+.theme-change_button:hover {
     background: rgba(255,255,255, 0.2);
     transform: scale(1.1);
     border-radius: 5px;
@@ -263,6 +263,10 @@ nav button[data-lang]:hover {
     font-weight: bold;
     transition: color 0.3s;
     
+}
+
+.inLineLink {
+    color: var(--accent);
 }
 
 .projeto a:hover:not(.btn-projeto){
@@ -420,6 +424,7 @@ footer {
 
 footer a {
     color: var(--accent);
+    font-weight: bold;
     margin: 0 10px;
 }
 
