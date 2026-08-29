@@ -25,6 +25,11 @@ body.darkmode {
     --img-color-filter: brightness(0) invert(1);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 /* Reset e estilos gerais */
 * {
@@ -261,7 +266,7 @@ nav button[data-lang]:hover {
 
 .projeto a {
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background 0.3s ease;
     
 }
 
@@ -282,11 +287,11 @@ ol, ul {
 .btn-projeto {
     display: inline-block;
     background: var(--azul);
+    transition: background 0.3s ease;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease, opacity ease;
     font-weight: bold;
 }
 
