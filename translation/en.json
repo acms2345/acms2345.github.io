@@ -17,6 +17,7 @@
     "projects.viewOnGitHub": "View on GitHub", 
     "projects.download" : "Download it",
     "projects.viewOnlineDemo" : "Test online demo",
+    "projects.hackatimeStatsAlt": "Project Hackatime Stats", 
 
     "projects.chess-in-c.title": "Chess in C ♙", 
     "projects.chess-in-c.description1": "Because of a school subject I worked on using the C language, I challenged myself to create a local, two-player chess game (no online matches), in terminal format.", 
@@ -31,7 +32,11 @@
     "projects.chess-in-c.feature5": "Move verification system faithful to the official chess rules, including special moves such as castling, drowning, etc.;", 
     "projects.chess-in-c.feature6": "Game replay system.", 
     "projects.chess-in-c.alt": "Screenshot of the C chess game, showing a colored board and a move request.", 
+
+    "projects.portfolio.title": "Acms' Portfolio (this site) 🌐",
+    "projects.portfolio.description1": "This site uses own translation system, versioning by GitHub commits, the 'ABNT generator' demo, among many other features.",
     
+    "projects.geradorabnt.title": "ABNT reference generator 📄",
     "projects.geradorabnt.StillInDevelopment" : "(Project still under development)",
     "projects.geradorabnt.description1" : "Aiming to facilitate academic research, I developed this system based on the academic citation model of the Brazilian Association of Technical Standards (ABNT).",
     "projects.geradorabnt.description2.pre" : "It is designed to be simple: ",

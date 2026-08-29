@@ -1,5 +1,7 @@
 # Acms' Portfolio
 
+![Hackatime time](https://hackatime.hackclub.com/api/v1/badge/U0A502D4LKX/acms2345/acms2345.github.io)
+
 ![Site screenshot (black theme)](assets/black-theme_screenshot.png)
 
 [A versão em português abaixo / Portuguese version below](#Versão-em-português)
@@ -47,7 +49,7 @@ Repository link: [github.com/acms2345/Xadrez-em-C](https://github.com/acms2345/X
 
 Link to download the game: [github.com/acms2345/Xadrez-em-C/releases](https://github.com/acms2345/Xadrez-em-C/releases)
 
-### GeradorABNTPy 📄
+### ABNT reference generator (GeradorABNTPy) 📄
 
 Python algorithm (still under development) for automated academic citation and bibliography creations, in the Brasilian Association of Technical Standards (ABNT) citation format.
 

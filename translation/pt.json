@@ -16,7 +16,8 @@
 
     "projects.viewOnGitHub": "Veja no GitHub",
     "projects.download": "Faça o download",  
-    "projects.viewOnlineDemo" : "Testar demo online",  
+    "projects.viewOnlineDemo" : "Testar demo online",
+    "projects.hackatimeStatsAlt": "Estatísticas do Hackatime quanto ao projeto",  
 
     "projects.chess-in-c.title": "Xadrez em C ♙",
     "projects.chess-in-c.description1": "Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), no formato de terminal.",
@@ -32,8 +33,12 @@
     "projects.chess-in-c.feature6": "Replay das partidas.",
     "projects.chess-in-c.alt": "Screenshot do jogo de xadrez em C, mostrando um tabuleiro colorido e uma solicitação de movimento.",
 
+    "projects.portfolio.title": "Acms' Portfolio (esse site) 🌐",
+    "projects.portfolio.description1": "O presente site utiliza sistema próprio de tradução, versionamento por meio dos commits do GitHub, a demonstração do projeto 'GeradorABNT', dentre vários recursos.",
+
+    "projects.geradorabnt.title": "Gerador de referências ABNT 📄",
     "projects.geradorabnt.StillInDevelopment" : "(Projeto ainda em desenvolvimento)",
-    "projects.geradorabnt.description1" : "Buscando facilitar pesquisas acadêmicas, desenvolvi esse sistema voltado ao modelo de citações acadêmicas da Associação Brasileira de Normas Técnicas (ABNT).",
+    "projects.geradorabnt.description1" : "Buscando facilitar pesquisas acadêmicas, desenvolvi esse sistema voltado ao modelo de citações acadêmicas da Associação Brasileira de Normas Técnicas (ABNT) na linguagem Python.",
     "projects.geradorabnt.description2.pre" : "O uso é propositalmente simples: ",
     "projects.geradorabnt.description2.bold" : "Insira o link → Tenha a citação e a referência bibliográfica prontas.",
 
