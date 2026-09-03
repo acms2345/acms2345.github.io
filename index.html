@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     
 
@@ -46,8 +46,8 @@
         <button data-lang="pt" title="Português"><i class="fas fa-globe"></i> PT</button>
         <button data-lang="en" title="English"><i class="fas fa-globe"></i> EN</button>
         <button class="theme-change_button white">
-            <img src="assets/sun_icon.svg" class="black-theme_icon">
-            <img src="assets/moon_icon.svg" class="white-theme_icon">
+            <img src="assets/sun_icon.svg" class="black-theme_icon" data-translation-attr="alt:nav.WhiteThemeAlt">
+            <img src="assets/moon_icon.svg" class="white-theme_icon" data-translation-attr="alt:nav.BlackThemeAlt">
         </button>
         
     </nav>
@@ -55,195 +55,198 @@
         <h1>Antonio Carlos</h1>
         <p data-translation="header.subtitle">Desenvolvedor de jogos | Programador | Estudante</p>
     </header>
-    <section id="sobre">
-        <h2 data-translation="about.title">Sobre mim</h2>
-        <div class="sobre-conteudo">
-            <p data-translation="about.description1">
-                Olá! Sou um adolescente de 16 anos, que desde 3-4 anos fazia desenvolvimento 
-                (principalmente de jogos, em plataformas como a Godot Engine) por entretenimento 
-                e como passatempo.
-            </p>
-            <p data-translation="about.description2">
-                Atualmente, estou cursando o Técnico em Informática, pois busco me qualificar naquilo
-                que gosto e me identifico. Enquanto isso, estou buscando me aperfeiçoar por meio de 
-                alguns projetos particulares, 
-                compartilhá-los em plataformas internacionais como a Macondo e a Flavortown, e 
-                aprender diferentes linguagens de programação; para aprender e construir o futuro que
-                pretendo trilhar na área de desenvolvimento.
-            </p>
-        </div>
 
-        
-    </section>
-    <section id="projetos">
-        <h2 data-translation="projects.title">Projetos</h2>
-        <div class="projetos-container">
-            <div class="projeto">
-                <div class="projeto-midia">
-                    <video autoplay muted loop playsinline>
-                        <source src="assets/chess-in-c_test.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="projeto-informacoes">
-                    <h3 data-translation="projects.chess-in-c.title">Xadrez em C ♙</h3>
-                    <img src="https://hackatime.hackclub.com/api/v1/badge/acms2345/acms2345/Xadrez-em-C" data-translation-attr="alt:projects.hackatimeStatsAlt">
-                    <p data-translation="projects.chess-in-c.description1">Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, 
-                        me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), 
-                        no formato de terminal.</p>
-                    <p data-translation="projects.chess-in-c.description2">O jogo está disponível para Windows, Mac e Linux, e possui uma versão de teste online.</p>
-                    <p><span data-translation="projects.chess-in-c.description3.pre">Esse jogo também foi publicado na </span><a href="https://flavortown.hackclub.com/" target="_blank" class="inLineLink">Flavortown</a><span data-translation="projects.chess-in-c.description3.post">, uma plataforma de programação e desafio global voltada a adolescentes.</span>
-                    </p>
-                    <p data-translation="projects.chess-in-c.description4">Alguns recursos são:</p>
-                    <ul>
-                        <li data-translation="projects.chess-in-c.feature1">Partida de xadrez local para duas pessoas;</li>
-                        <li data-translation="projects.chess-in-c.feature2">Sistema de tradução (português e inglês);</li>
-                        <li data-translation="projects.chess-in-c.feature3">Salvamento e carregamento de partidas;</li>
-                        <li data-translation="projects.chess-in-c.feature4">Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;</li>
-                        <li data-translation="projects.chess-in-c.feature5">Verificação de jogadas conforme as regras oficiais do xadrez, incluindo
-                            movimentos especiais como roque, afogamento, etc.;</li>
-                        <li data-translation="projects.chess-in-c.feature6">E replay das partidas.</li>
-                    </ul>
-                    <div class="botoes_projeto">
-                        <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
-                        <a href="https://github.com/acms2345/Xadrez-em-C/releases" class="btn-projeto" data-translation="projects.download" target="_blank"  rel="noopener noreferrer">Faça o download</a>
-                    </div>
-                </div>
-                
+    <main>
+        <section id="sobre">
+            <h2 data-translation="about.title">Sobre mim</h2>
+            <div class="sobre-conteudo">
+                <p data-translation="about.description1">
+                    Olá! Sou um adolescente de 16 anos, que desde 3-4 anos fazia desenvolvimento 
+                    (principalmente de jogos, em plataformas como a Godot Engine) por entretenimento 
+                    e como passatempo.
+                </p>
+                <p data-translation="about.description2">
+                    Atualmente, estou cursando o Técnico em Informática, pois busco me qualificar naquilo
+                    que gosto e me identifico. Enquanto isso, estou buscando me aperfeiçoar por meio de 
+                    alguns projetos particulares, 
+                    compartilhá-los em plataformas internacionais como a Macondo e a Flavortown, e 
+                    aprender diferentes linguagens de programação; para aprender e construir o futuro que
+                    pretendo trilhar na área de desenvolvimento.
+                </p>
             </div>
-            <div class="projeto">
-                <div class="projeto-informacoes">
-                    <h3 data-translation="projects.portfolio.title">Acms' Portfolio (esse site) 🌐</h3>
-                    <img src="https://hackatime.hackclub.com/api/v1/badge/U0A502D4LKX/acms2345/acms2345.github.io" data-translation-attr="alt:projects.hackatimeStatsAlt">
-                    <p data-translation="projects.portfolio.description1">O presente site utiliza sistema próprio de tradução, versionamento por meio dos commits do GitHub, 
-                        a demonstração do projeto "GeradorABNT", dentre vários recursos.</p>
-                    <a href="https://github.com/acms2345/acms2345.github.io" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
-                </div>
-            </div>
-            <div class="projeto">
-                <div class="projeto-informacoes">
-                    <h3 data-translation="projects.geradorabnt.title">GeradorABNTPy 📄</h3>
-                    <img src="https://hackatime.hackclub.com/api/v1/badge/acms2345/acms2345/GeradorABNTPy" data-translation-attr="alt:projects.hackatimeStatsAlt">
-                    <p data-translation="projects.geradorabnt.StillInDevelopment">(Projeto ainda em desenvolvimento)</p>
-                    <p data-translation="projects.geradorabnt.description1">Buscando facilitar pesquisas acadêmicas, desenvolvi
-                        esse sistema voltado ao modelo de citações acadêmicas da 
-                        Associação Brasileira de Normas e Técnicas (ABNT).
-                    </p>
-                    <p>
-                        <span data-translation="projects.geradorabnt.description2.pre">O uso é propositalmente simples: </span>
-                        <b data-translation="projects.geradorabnt.description2.bold">Insira o link → Tenha a citação e a referência bibliográfica prontas.</b>
-                    </p>
-                    <div class="botoes_projeto">
-                        <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
-                        <a href="https://acms2345.github.io/demos/geradorabnt" class="btn-projeto" data-translation="projects.viewOnlineDemo">Testar demo online</a>
-                    </div>
+
             
+        </section>
+        <section id="projetos">
+            <h2 data-translation="projects.title">Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto">
+                    <div class="projeto-midia">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/chess-in-c_test.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="projeto-informacoes">
+                        <h3 data-translation="projects.chess-in-c.title">Xadrez em C ♙</h3>
+                        <img src="https://hackatime.hackclub.com/api/v1/badge/acms2345/acms2345/Xadrez-em-C" data-translation-attr="alt:projects.hackatimeStatsAlt">
+                        <p data-translation="projects.chess-in-c.description1">Por causa de uma disciplina escolar com a qual trabalhei com a linguagem C, 
+                            me desafiei a criar um jogo de xadrez de dois jogadores, local (sem partidas online), 
+                            no formato de terminal.</p>
+                        <p data-translation="projects.chess-in-c.description2">O jogo está disponível para Windows, Mac e Linux, e possui uma versão de teste online.</p>
+                        <p><span data-translation="projects.chess-in-c.description3.pre">Esse jogo também foi publicado na </span><a href="https://flavortown.hackclub.com/" target="_blank" class="inLineLink">Flavortown</a><span data-translation="projects.chess-in-c.description3.post">, uma plataforma de programação e desafio global voltada a adolescentes.</span>
+                        </p>
+                        <p data-translation="projects.chess-in-c.description4">Alguns recursos são:</p>
+                        <ul>
+                            <li data-translation="projects.chess-in-c.feature1">Partida de xadrez local para duas pessoas;</li>
+                            <li data-translation="projects.chess-in-c.feature2">Sistema de tradução (português e inglês);</li>
+                            <li data-translation="projects.chess-in-c.feature3">Salvamento e carregamento de partidas;</li>
+                            <li data-translation="projects.chess-in-c.feature4">Uso de cores ANSI para colorir o tabuleiro e adicionar mensagens especiais;</li>
+                            <li data-translation="projects.chess-in-c.feature5">Verificação de jogadas conforme as regras oficiais do xadrez, incluindo
+                                movimentos especiais como roque, afogamento, etc.;</li>
+                            <li data-translation="projects.chess-in-c.feature6">E replay das partidas.</li>
+                        </ul>
+                        <div class="botoes_projeto">
+                            <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                            <a href="https://github.com/acms2345/Xadrez-em-C/releases" class="btn-projeto" data-translation="projects.download" target="_blank"  rel="noopener noreferrer">Faça o download</a>
+                        </div>
+                    </div>
                     
                 </div>
+                <div class="projeto">
+                    <div class="projeto-informacoes">
+                        <h3 data-translation="projects.portfolio.title">Acms' Portfolio (esse site) 🌐</h3>
+                        <img src="https://hackatime.hackclub.com/api/v1/badge/U0A502D4LKX/acms2345/acms2345.github.io" data-translation-attr="alt:projects.hackatimeStatsAlt">
+                        <p data-translation="projects.portfolio.description1">O presente site utiliza sistema próprio de tradução, versionamento por meio dos commits do GitHub, 
+                            a demonstração do projeto "GeradorABNT", dentre vários recursos.</p>
+                        <a href="https://github.com/acms2345/acms2345.github.io" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="projeto-informacoes">
+                        <h3 data-translation="projects.geradorabnt.title">GeradorABNTPy 📄</h3>
+                        <img src="https://hackatime.hackclub.com/api/v1/badge/acms2345/acms2345/GeradorABNTPy" data-translation-attr="alt:projects.hackatimeStatsAlt">
+                        <p data-translation="projects.geradorabnt.StillInDevelopment">(Projeto ainda em desenvolvimento)</p>
+                        <p data-translation="projects.geradorabnt.description1">Buscando facilitar pesquisas acadêmicas, desenvolvi
+                            esse sistema voltado ao modelo de citações acadêmicas da 
+                            Associação Brasileira de Normas e Técnicas (ABNT).
+                        </p>
+                        <p>
+                            <span data-translation="projects.geradorabnt.description2.pre">O uso é propositalmente simples: </span>
+                            <b data-translation="projects.geradorabnt.description2.bold">Insira o link → Tenha a citação e a referência bibliográfica prontas.</b>
+                        </p>
+                        <div class="botoes_projeto">
+                            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                            <a href="https://acms2345.github.io/demos/geradorabnt" class="btn-projeto" data-translation="projects.viewOnlineDemo">Testar demo online</a>
+                        </div>
+                
+                        
+                    </div>
+                </div>
             </div>
+        </section>
+        
+        <section id="habilidades">
+        <h2 data-translation="skills.title">Habilidades</h2>
+
+        <h3 data-translation="skills.languages">Linguagens</h3>
+
+        <div class="skills_info">
+            <div class="skills_lista">
+            <div class="skill_card">
+                <img src="assets/c-icon.svg">
+                <p class="linguagem_nome">C</p>
+                <p data-translation="skills.languages.knowledge.intermediate" class="linguagem_nivel">(Intermediário)</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/python-icon.svg">
+                <p class="linguagem_nome">Python</p>
+                <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/html5-icon.svg">
+                <p class="linguagem_nome">HTML</p>
+                <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-translation-attr="alt:skills.languages.gdscript.alt">
+                <p class="linguagem_nome">GDScript</p>
+                <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/css3-icon.svg" alt="">
+                <p class="linguagem_nome">CSS</p>
+                <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/javascript-icon.svg" alt="">
+                <p class="linguagem_nome">JavaScript</p>
+                <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
+            </div>
+            <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=24102&api_domain=hackatime.hackclub.com&theme=default&custom_title=Programming+Stats&layout=compact&cache_seconds=0&langs_count=8&title_color=667eea&bg_color=f4f4f4" class="img_Hackatime_stats">
+
         </div>
-    </section>
-    
-    <section id="habilidades">
-      <h2 data-translation="skills.title">Habilidades</h2>
+        </div>
+                
 
-      <h3 data-translation="skills.languages">Linguagens</h3>
-
-      <div class="skills_info">
+        <h3 data-translation="skills.tools">Ferramentas</h3>
+        
+        
         <div class="skills_lista">
-        <div class="skill_card">
-            <img src="assets/c-icon.svg">
-            <p class="linguagem_nome">C</p>
-            <p data-translation="skills.languages.knowledge.intermediate" class="linguagem_nivel">(Intermediário)</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/python-icon.svg">
-            <p class="linguagem_nome">Python</p>
-            <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/html5-icon.svg">
-            <p class="linguagem_nome">HTML</p>
-            <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-translation-attr="alt:skills.languages.gdscript.alt">
-            <p class="linguagem_nome">GDScript</p>
-            <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/css3-icon.svg">
-            <p class="linguagem_nome">CSS</p>
-            <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/javascript-icon.svg">
-            <p class="linguagem_nome">JavaScript</p>
-            <p data-translation="skills.languages.knowledge.basic" class="linguagem_nivel">(Básico)</p>
-        </div>
-        <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=24102&api_domain=hackatime.hackclub.com&theme=default&custom_title=Programming+Stats&layout=compact&cache_seconds=0&langs_count=8&title_color=667eea&bg_color=f4f4f4" class="img_Hackatime_stats">
-
-      </div>
-      </div>
-            
-
-      <h3 data-translation="skills.tools">Ferramentas</h3>
-      
-      
-      <div class="skills_lista">
-        <div class="skill_card">
-            <img src="assets/github_logo.svg">
-            <p class="linguagem_nome">Git / GitHub</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/vscode-icon.svg" alt="VS Code">
-            <p class="linguagem_nome">VS Code</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-translation-attr="alt:skills.languages.gdscript.alt">
-            <p class="linguagem_nome">Godot Engine</p>
-        </div>
-        <div class="skill_card">
-            <img src="assets/figma-icon.svg" alt="Logo do Figma" data-translation-attr="alt:skills.tools.figma.alt">
-            <p class="linguagem_nome">Figma</p>
-        </div>
-      
-      </div>
-      
-    </section>
-    
-    <section id="contato">
-        <h2 data-translation="contact.title">Contato</h2>
-
-        <div class="botoesContato">
-
-            <button class="botao_perfilGithub">
-                <img src="assets/github_logo.svg" alt="GitHub">
-                <span data-translation="contact.githubProfile">Perfil do GitHub</span>
-            </button>
-
-            <button class="botaoEmail">
-                <i class="fa-regular fa-envelope fa-2x"></i> 
-                <p data-translation="contact.contactEmail"> Email para contato</p>
-            </button>
+            <div class="skill_card">
+                <img src="assets/github_logo.svg" alt="">
+                <p class="linguagem_nome">Git / GitHub</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/vscode-icon.svg" alt="VS Code" alt="">
+                <p class="linguagem_nome">VS Code</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/godot-icon.svg" alt="Logo do Godot Engine" data-translation-attr="alt:skills.languages.gdscript.alt">
+                <p class="linguagem_nome">Godot Engine</p>
+            </div>
+            <div class="skill_card">
+                <img src="assets/figma-icon.svg" alt="Logo do Figma" data-translation-attr="alt:skills.tools.figma.alt">
+                <p class="linguagem_nome">Figma</p>
+            </div>
+        
         </div>
         
-        <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
-            <label>
-                <span data-translation="contact.form.email">Seu email:</span>
-                <input type="email" name="email" required>
-            </label>
-            <div class="input_group">
-                <label>
-                    <span data-translation="contact.form.message">Sua mensagem:</span>
-                    <textarea name="message" required></textarea>
-                </label>
-            </div>
-            <!-- your other form fields go here -->
-            <button class="g-recaptcha" data-sitekey="6Lez9_UsAAAAAK8f96eIN6D_wVTamWBDerHUwNS4"
-            data-callback='onSubmit' data-action='submit' type="submit"><span data-translation="contact.form.send">Enviar</span></button>
-        </form>
+        </section>
+        
+        <section id="contato">
+            <h2 data-translation="contact.title">Contato</h2>
 
-    </section>
+            <div class="botoesContato">
+
+                <button class="botao_perfilGithub">
+                    <img src="assets/github_logo.svg" alt="GitHub">
+                    <span data-translation="contact.githubProfile">Perfil do GitHub</span>
+                </button>
+
+                <button class="botaoEmail">
+                    <i class="fa-regular fa-envelope fa-2x"></i> 
+                    <p data-translation="contact.contactEmail"> Email para contato</p>
+                </button>
+            </div>
+            
+            <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
+                <label>
+                    <span data-translation="contact.form.email">Seu email:</span>
+                    <input type="email" name="email" required>
+                </label>
+                <div class="input_group">
+                    <label>
+                        <span data-translation="contact.form.message">Sua mensagem:</span>
+                        <textarea name="message" required></textarea>
+                    </label>
+                </div>
+                <!-- your other form fields go here -->
+                <button class="g-recaptcha" data-sitekey="6Lez9_UsAAAAAK8f96eIN6D_wVTamWBDerHUwNS4"
+                data-callback='onSubmit' data-action='submit' type="submit"><span data-translation="contact.form.send">Enviar</span></button>
+            </form>
+
+        </section>
+    </main>
     
     <footer>
         <b>acms.me</b>

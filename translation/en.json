@@ -5,6 +5,8 @@
     "nav.projects": "Projects", 
     "nav.skills": "Skills", 
     "nav.contact": "Contact", 
+    "nav.WhiteThemeAlt": "White theme transition button",
+    "nav.BlackThemeAlt": "Black theme transition button",
 
     "header.subtitle": "Game Developer | Programmer | Student", 
 
