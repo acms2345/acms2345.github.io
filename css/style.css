@@ -225,6 +225,8 @@ nav button[data-lang]:hover {
 
 .projeto-midia {
     flex: 0 0 40%;
+    position: relative;
+    align-self: flex-start;
 }
 
 .projeto-midia img {
@@ -236,6 +238,26 @@ nav button[data-lang]:hover {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
+}
+
+.video-toggle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.projeto-midia:hover .video-toggle,
+.projeto-midia:focus-within .video-toggle {
+    opacity: 1;
 }
 
 
@@ -274,7 +296,7 @@ nav button[data-lang]:hover {
     color: var(--accent);
 }
 
-.projeto a:hover:not(.btn-projeto){
+.projeto a:hover:not(.btn-link){
     color: var(--accent-hover);
 }
 
@@ -284,8 +306,8 @@ ol, ul {
 }
 
 /* Botão do Projeto */
-.btn-projeto {
-    display: inline-block;
+.btn-link {
+    display: inline-flex;
     background: var(--azul);
     transition: background 0.3s ease;
     color: white;
@@ -293,9 +315,10 @@ ol, ul {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    align-items: center;
 }
 
-.btn-projeto:hover {
+.btn-link:hover {
     background: var(--accent-hover);
 }
 
@@ -346,14 +369,8 @@ ol, ul {
 }
 
 
-
-#contato a{
-    color: var(--accent);
-    font-weight: bold;
-    transition: color 0.3s;
-}
-#contato a:hover{
-    color: var(--accent-hover);
+#contato a {
+    font-size: small;
 }
 
 #contato button{
@@ -369,7 +386,7 @@ ol, ul {
     align-items: center;
 }
 
-#contato button img {
+#contato a img {
     filter: brightness(0) invert(1);
 }
 
@@ -496,6 +513,8 @@ footer a {
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: bold;
+
+    font-size: small;
 
     border: none;
     cursor: pointer;

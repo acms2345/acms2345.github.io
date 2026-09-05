@@ -10,14 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
         //Ao clicar no menu
         menuBtn.addEventListener('click', function(){
-        menuBtn.classList.toggle('active');
-        navMenu.classList.toggle('active');
+            const botaoAtivo = menuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            menuBtn.setAttribute('aria-expanded', botaoAtivo)
         });
         
         document.querySelectorAll('.navMenu a').forEach(link => {
         link.addEventListener('click', function(){
             menuBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
+
+            menuBtn.setAttribute('aria-expanded', "false")
+
+
         })});
         
         //Fechar ao clicar fora
@@ -25,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!e.target.closest('nav')) {
                 menuBtn.classList.remove('active');
                 navMenu.classList.remove('active');
+
+                 menuBtn.setAttribute('aria-expanded', "false")
             }
         });
     }
@@ -44,21 +52,7 @@ if (botaoRepositorio){
 }
 
 
-const botaoEmail = document.querySelector('.botaoEmail')
 
-if (botaoEmail){
-    botaoEmail.addEventListener('click', function() {
-        window.location.href = 'mailto:acmsme@duck.com';
-    });
-}
-
-const botaoPerfilGithub = document.querySelector('.botao_perfilGithub')
-
-if (botaoPerfilGithub){
-    botaoPerfilGithub.addEventListener('click', function() {
-        window.location.href = 'https://github.com/acms2345';
-    });
-}
 
 
 
@@ -224,5 +218,25 @@ themeChangeButton.addEventListener('click', function() {
         localStorage.setItem('theme', 'dark')
     }
 })
+
+const video = document.querySelector('.video')
+const videoToggle = document.querySelector('.video-toggle')
+
+if (video && videoToggle){
+    videoToggle.addEventListener('click', function() {
+        if (video.paused) {
+            video.play();
+            videoToggle.setAttribute('aria-label', 'Pausar vídeo');
+            videoToggle.setAttribute('aria-pressed', 'false');
+            videoToggle.innerHTML = '<i class="fas fa-pause"></i>';
+        } else {
+            video.pause();
+            videoToggle.setAttribute('aria-label', 'Reproduzir vídeo');
+            videoToggle.setAttribute('aria-pressed', 'true');
+            videoToggle.innerHTML = '<i class="fas fa-play"></i>';
+        }
+    });
+}
+
 
 

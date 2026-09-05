@@ -8,6 +8,13 @@
     "nav.WhiteThemeAlt": "White theme transition button",
     "nav.BlackThemeAlt": "Black theme transition button",
 
+    "nav.openMenu" : "Open menu",
+    "nav.menuOpenAlt" : "Open menu image",
+    "nav.closeMenu" : "Close menu",
+    "nav.menuCloseAlt" : "Close menu image",
+
+    "nav.changeThemeButton" : "Change black/white theme",
+
     "header.subtitle": "Game Developer | Programmer | Student", 
 
     "about.title": "About me", 

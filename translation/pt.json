@@ -9,6 +9,11 @@
     "nav.WhiteThemeAlt": "Botão de transição ao modo claro",
     "nav.BlackThemeAlt": "Botão de transição ao modo escuro",
 
+    "nav.openMenuButton" : "Botão de abrir/fechar menu",
+    "nav.menuOpenAlt" : "Imagem de abrir menu",
+    "nav.menuCloseAlt" : "Imagem de fechar menu", 
+    "nav.changeThemeButton" : "Alternar tema claro/escuro",
+
     "header.subtitle": "Desenvolvedor de jogos | Programador | Estudante",
 
     "about.title": "Sobre mim",

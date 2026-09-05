@@ -33,9 +33,9 @@
 <body>
     <!-- NAVBAR -->
     <nav>
-        <button class="menu" id="menuBtn">
+        <button class="menu" id="menuBtn" data-translation-attr="aria-label:nav.openMenuButton" aria-expanded="false">
           <img src="/assets/menu.svg" class="menuOpen">
-          <img src="/assets/close.svg" class="menuClose" style="display:none;">
+          <img src="/assets/close.svg" class="menuClose" style="display:none;" data-translation-attr="alt:nav.menuCloseAlt">
         </button>
         <div class="navMenu" id="navMenu">
           <a href="#sobre" data-translation="nav.about">Sobre</a>
@@ -45,7 +45,7 @@
         </div>
         <button data-lang="pt" title="Português"><i class="fas fa-globe"></i> PT</button>
         <button data-lang="en" title="English"><i class="fas fa-globe"></i> EN</button>
-        <button class="theme-change_button white">
+        <button class="theme-change_button white" data-translation-attr="aria-label:nav.changeThemeButton">
             <img src="assets/sun_icon.svg" class="black-theme_icon" data-translation-attr="alt:nav.WhiteThemeAlt">
             <img src="assets/moon_icon.svg" class="white-theme_icon" data-translation-attr="alt:nav.BlackThemeAlt">
         </button>
@@ -82,9 +82,12 @@
             <div class="projetos-container">
                 <div class="projeto">
                     <div class="projeto-midia">
-                        <video autoplay muted loop playsinline>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="video">
                             <source src="assets/chess-in-c_test.mp4" type="video/mp4">
                         </video>
+                        <button class="video-toggle" id="videoToggle" aria-label="Pausar vídeo" aria-pressed="false">
+                            <i class="fas fa-pause"></i>
+                        </button>
                     </div>
                     <div class="projeto-informacoes">
                         <h3 data-translation="projects.chess-in-c.title">Xadrez em C ♙</h3>
@@ -106,8 +109,8 @@
                             <li data-translation="projects.chess-in-c.feature6">E replay das partidas.</li>
                         </ul>
                         <div class="botoes_projeto">
-                            <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
-                            <a href="https://github.com/acms2345/Xadrez-em-C/releases" class="btn-projeto" data-translation="projects.download" target="_blank"  rel="noopener noreferrer">Faça o download</a>
+                            <a href="https://github.com/acms2345/Xadrez-em-C" class="btn-link" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                            <a href="https://github.com/acms2345/Xadrez-em-C/releases" class="btn-link" data-translation="projects.download" target="_blank"  rel="noopener noreferrer">Faça o download</a>
                         </div>
                     </div>
                     
@@ -118,7 +121,7 @@
                         <img src="https://hackatime.hackclub.com/api/v1/badge/U0A502D4LKX/acms2345/acms2345.github.io" data-translation-attr="alt:projects.hackatimeStatsAlt">
                         <p data-translation="projects.portfolio.description1">O presente site utiliza sistema próprio de tradução, versionamento por meio dos commits do GitHub, 
                             a demonstração do projeto "GeradorABNT", dentre vários recursos.</p>
-                        <a href="https://github.com/acms2345/acms2345.github.io" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                        <a href="https://github.com/acms2345/acms2345.github.io" class="btn-link" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
                     </div>
                 </div>
                 <div class="projeto">
@@ -135,8 +138,8 @@
                             <b data-translation="projects.geradorabnt.description2.bold">Insira o link → Tenha a citação e a referência bibliográfica prontas.</b>
                         </p>
                         <div class="botoes_projeto">
-                            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-projeto" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
-                            <a href="https://acms2345.github.io/demos/geradorabnt" class="btn-projeto" data-translation="projects.viewOnlineDemo">Testar demo online</a>
+                            <a href="https://github.com/acms2345/GeradorABNTPy" class="btn-link" data-translation="projects.viewOnGitHub" target="_blank"  rel="noopener noreferrer">Veja no GitHub</a>
+                            <a href="https://acms2345.github.io/demos/geradorabnt" class="btn-link" data-translation="projects.viewOnlineDemo">Testar demo online</a>
                         </div>
                 
                         
@@ -218,15 +221,15 @@
 
             <div class="botoesContato">
 
-                <button class="botao_perfilGithub">
+                <a class="btn-link" href="https://github.com/acms2345">
                     <img src="assets/github_logo.svg" alt="GitHub">
                     <span data-translation="contact.githubProfile">Perfil do GitHub</span>
-                </button>
+                </a>
 
-                <button class="botaoEmail">
+                <a class="btn-link" href="mailto:acmsme@duck.com">
                     <i class="fa-regular fa-envelope fa-2x"></i> 
                     <p data-translation="contact.contactEmail"> Email para contato</p>
-                </button>
+                </a>
             </div>
             
             <form id="FormularioContato" action="https://formspree.io/f/meedqbdy" method="POST">
@@ -257,10 +260,10 @@
                 Build: <code class="commitHash">COMMIT_HASH</code>
             </a>
         </p>
-        <button class="botao_repositorio">
+        <a class="botao_repositorio" href="https://github.com/acms2345/acms2345.github.io">
             <img src="assets/github_logo.svg" alt="GitHub" style="filter: brightness(0) invert(1);">
             <span data-translation="footer.repository">Repositório</span>
-        </button>
+        </a>
     </footer>
     <script src="js/script.js"></script>
 </body>
