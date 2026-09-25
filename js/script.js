@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (menuBtn && navMenu){
     
-        //Ao clicar no menu
+        //Ao clicar no botão do menu
         menuBtn.addEventListener('click', function(){
             const botaoAtivo = menuBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             menuBtn.setAttribute('aria-expanded', botaoAtivo)
         });
         
+        //Fechar o menu quando clicar em um dos links dele.
         document.querySelectorAll('.navMenu a').forEach(link => {
         link.addEventListener('click', function(){
             menuBtn.classList.toggle('active');

@@ -430,6 +430,11 @@ ol, ul {
     background: var(--background-color);
     transition: transform 0.3s ease, opacity 0.3s ease;
     color: var(--cor-texto-weak);
+    outline: none;
+}
+
+#FormularioContato input:focus, #FormularioContato textarea:focus {
+    outline: 1pt solid var(--accent);
 }
 
 #FormularioContato textarea {
@@ -546,10 +551,15 @@ footer a {
     background: var(--background-color);
     border: 1px solid var(--cor-texto-weak);
     margin-bottom: 15px;
+    outline: none;
 }
 
 .sistema input::placeholder {
     font-size: medium;
+}
+
+.sistema input:focus {
+    outline: 1pt solid var(--accent);
 }
 
 .sistema button {
